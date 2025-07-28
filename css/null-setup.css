@@ -14,7 +14,11 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 a{color:inherit;}
-hr{background: linear-gradient(to right, #ff875b, #036ad1);border: none;height: 3px;margin:10px 0}
+hr {height: 3px;border: none;margin: 5px 0;background: linear-gradient(to right, transparent, #333, transparent);}
+
+/* background: linear-gradient(to right, transparent, #333, transparent); */
+/* background: linear-gradient(to right, #444, #888, #444); */
+/* background: linear-gradient(to right, #ff5c00, #a300ff, #00fff7);box-shadow: 0 0 6px rgba(255, 92, 0, 0.5); */
 
 /* STRUCTURE:
 background: ;
