@@ -1,16 +1,25 @@
 # personal-website
 
 ## Roadmap
-
 - ~~New media icons;~~
 - New logo and main icon;
 - The gallery is black and white, but it turns into colors when navigating to the content;
+- Floating content of the page content;
+- Adaptive content display;
+- Toggle to switch the theme;
+- Light theme - white and silver colors;
+- Admin Panel;
 - Black and white, gradient design.
 
 ## Version List
 
-### Ver. 00.02.29.07
+### Ver. 00.03.31.07
 - 
+
+### Ver. 00.02.30.07
+- Added a small gallery template;
+- Fixing a background issue;
+- Small `css` optimizations.
 
 ### Ver. 00.01.28.07
 - Redesign in strict, calm gradient colors of black and white;
