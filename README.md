@@ -4,6 +4,7 @@
 - ~~New media icons;~~
 - New logo and main icon;
 - The gallery is black and white, but it turns into colors when navigating to the content;
+- Pop-up gallery images;
 - Floating content of the page content;
 - Adaptive content display;
 - Toggle to switch the theme;
@@ -13,15 +14,20 @@
 
 ## Version List
 
-### Ver. 00.03.31.07
-- 
+### Ver. 00.03.02.08.25
+- Moving Content;
+- Sorting the CSS code;
+- Minor fixes;
+- Two main font families;
+- Corrected gallery view;
+- New gallery images.
 
-### Ver. 00.02.30.07
+### Ver. 00.02.30.07.25
 - Added a small gallery template;
 - Fixing a background issue;
 - Small `css` optimizations.
 
-### Ver. 00.01.28.07
+### Ver. 00.01.28.07.25
 - Redesign in strict, calm gradient colors of black and white;
 - Added a similar `footer` and an empty `main`;
 - Adding two media links instead of four;

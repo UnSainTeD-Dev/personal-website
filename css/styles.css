@@ -1,24 +1,24 @@
 body {
-    min-height: 100vh;
     background: linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .wrapper {
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: inherit;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .container {
     max-width: 1230px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /** Header **/
@@ -27,16 +27,18 @@ body {
 
 .header__inner {
     display: flex;
-    align-items: flex-end;
-    padding: 15px 0;
     justify-content: space-between;
-    white-space: nowrap;
+    align-items: flex-end;
     font-family: 'ITC Century Std';
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    padding: 15px 0;
 }
+
+/* Logo & Title */
 
 .header__logo {
     display: inline-flex;
@@ -47,6 +49,12 @@ body {
 .title {
     font-size: 1.5rem;
 }
+
+.title:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
 
 .header__nav {
     display: flex;
@@ -87,37 +95,44 @@ body {
 }
 
 .main__inner {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     padding: 15px 0;
-    font-family: 'ITC Century Std';
-    font-weight: normal;
-    font-style: normal;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* About Me */
+
 .main__about {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 510px;
+    max-width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
     gap: 1rem;
+    margin: 0;
 }
 
 .main__about-block {
-    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
     border: 3px solid #303030;
-    display: grid;
-    grid-auto-rows: min-content;
-    word-spacing: 0.1rem;
-    letter-spacing: 0.1rem;
-    min-width: 150px;
-    max-width: 400px;
-    max-height: 210px;
+    border-radius: 10px;
+    text-align: center;
     padding: 0 0.5rem;
     overflow: hidden;
-    /* background: linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%); */
 }
 
+
 .main__about-block h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: underline;
     margin: 5px 0;
 }
@@ -127,43 +142,89 @@ body {
     margin: 5px 0;
 }
 
+.main__about-block a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery */
+
 .main__gallery {
+    position: relative;
+    padding: 0px 60px;
+    overflow: hidden;
+}
+
+.gallery__btn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    top: 50%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.gallery__btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery__btn--prev {
+    left: 15px;
+}
+
+.gallery__btn--next {
+    right: 15px;
+}
+
+.gallery__viewport {
+    overflow: hidden;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 15px 35px;
-    box-sizing: border-box;
 }
 
 .main__gallery-wrap {
     display: flex;
     gap: 10px;
-    overflow: hidden;
-    height: 550px;
+    height: 30rem;
+    transition: transform 0.5s ease;
+    width: max-content;
 }
 
 .main__gallery-wrap img {
-    flex: 1;
-    object-fit: cover;
-    width: 100%;
+    width: 15rem;
+    flex-shrink: 0;
     height: 100%;
-    transition: flex 0.5s ease-in-out;
-    cursor: pointer;
-    border-radius: 10px;
+    object-fit: cover;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
+    .gallery__viewport {
+        max-width: 100%;
+    }
+
     .main__gallery-wrap {
         flex-direction: column;
         height: auto;
     }
 
     .main__gallery-wrap img {
-        flex: none;
+        width: 100%;
         height: 250px;
+    }
+
+    .gallery__btn {
+        display: none;
     }
 }
 
+/*  */
 
 /** Footer **/
 
@@ -171,16 +232,18 @@ body {
 
 .footer__inner {
     display: flex;
-    align-items: flex-end;
-    padding: 15px 0;
     justify-content: space-between;
-    white-space: nowrap;
+    align-items: flex-end;
     font-family: 'ITC Century Std';
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    padding: 15px 0;
 }
+
+/* Logo & Title */
 
 .footer__logo {
     display: inline-flex;
@@ -191,6 +254,8 @@ body {
 .title {
     font-size: 1.5rem;
 }
+
+/* Navigation */
 
 .footer__nav {
     display: flex;

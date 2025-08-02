@@ -21,29 +21,51 @@ hr {height: 3px;border: none;margin: 5px 0;background: linear-gradient(to right,
 /* background: linear-gradient(to right, #ff5c00, #a300ff, #00fff7);box-shadow: 0 0 6px rgba(255, 92, 0, 0.5); */
 
 /* STRUCTURE:
-background: ;
-background-color: ;
-color: ;
-position: ;
-top: auto;
-bottom: auto;
-display: ;
-height: ;
-width: ;
-align-content: ;
-align-items: ;
-align-self: ;
-text-align: 
-line-height: ;
-font-family: serif;
-font-style: italic;
-font-weight: normal;
-font-size: ;
-word-spacing: ;
-white-space: ;
-letter-spacing: normal;
-text-decoration: ;
-text-shadow: hoff voff blur #000;
-margin: ;
-padding: ;
+position
+display
+flex
+flex-direction
+justify-content
+box-sizing
+object-fit
+background
+    background-size
+    background-color
+    background-repeat
+    background-attachment
+color
+border
+top
+bottom
+left
+right
+height
+min-height
+max-height
+width
+min-width
+max-width
+align-content
+align-items
+align-self
+text-align
+line-height
+font-family
+font-style
+font-weight
+font-size
+color
+word-spacing
+letter-spacing
+text-decoration
+text-shadow
+transition
+transform
+z-index
+cursor
+gap
+margin
+padding
+white-space
+overflow
 */
