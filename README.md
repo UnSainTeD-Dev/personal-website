@@ -14,6 +14,9 @@
 
 ## Version List
 
+### Ver. 00.04.03.08.25
+- Changing the content template in the footer to copyright;
+
 ### Ver. 00.03.02.08.25
 - Moving Content;
 - Sorting the CSS code;
