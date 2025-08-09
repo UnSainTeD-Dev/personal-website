@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/null-setup.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
+    <link rel="shortcut icon" href="img/logo-240x240.ico" type="image/x-icon">
     <title>UnSainTeD</title>
 </head>
 
@@ -18,7 +19,7 @@
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo" title="Перейти на главную страницу" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
+                        <img src="img/logo/logo-white.svg" alt="logo">
                         <h1 class="title">UnSainTeD-Dev</h1>
                     </a>
                     <ul class="header__nav">
@@ -75,9 +76,18 @@
                                 <img src="img/gallery/ref-3.png" alt="Image 3">
                                 <img src="img/gallery/ref-4.png" alt="Image 4">
                                 <img src="img/gallery/ref-5.png" alt="Image 5">
+                                <img src="img/gallery/ref-6.jpg" alt="Image 6">
+                                <img src="img/gallery/ref-7.png" alt="Image 7">
                             </div>
                         </div>
                         <button class="gallery__btn gallery__btn--next">›</button>
+                    </div>
+                    <div class="gallery-popup" id="gallery-popup">
+                        <div class="gallery-popup__overlay" id="popup-overlay"></div>
+                        <div class="gallery-popup__content">
+                            <img src="" alt="popup image" id="popup-image">
+                            <button class="gallery-popup__close" id="popup-close">×</button>
+                        </div>
                     </div>
                 </div>
             </div>

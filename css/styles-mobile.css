@@ -1,0 +1,97 @@
+/** HEADER **/
+
+.header__inner {
+    white-space: normal;
+    /* Разрешаем перенос текста вместо nowrap */
+    align-items: center;
+    /* Выровнять элементы по центру по вертикали */
+    gap: 0.75rem;
+    padding: 10px 0;
+}
+
+.header__logo {
+    gap: 0.5rem;
+}
+
+.header__nav {
+    font-size: 1rem;
+}
+
+.header__nav-link {
+    padding: 0.5rem;
+    /* Увеличиваем tappable-область ссылок */
+}
+
+/** MAIN **/
+
+.main__inner {
+    flex-direction: column;
+    /* Вертикальная компоновка */
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 0;
+}
+
+.main__about {
+    width: 100%;
+    max-width: 620px;
+    /* Ограничиваем ширину, но не жёстко 300px */
+    height: auto;
+    /* Сбрасываем фиксированную высоту */
+    margin: 0 auto;
+}
+
+.main__about-block {
+    min-height: 110px;
+    /* Комфортная высота карточек на мобилке */
+}
+
+/** MAIN__GALLERY **/
+
+.main__gallery {
+    padding: 0 20px;
+    /* Сужаем боковые поля под экран телефона */
+}
+
+.gallery__viewport {
+    max-width: 100%;
+    /* Не ограничиваем до 800px на мобиле */
+}
+
+/* Адаптивная высота галереи: зависит от ширины экрана (портретная ориентация) */
+.main__gallery-wrap {
+    height: 60vw;
+    /* Относительно ширины экрана */
+    max-height: 24rem;
+    /* Но не выше 24rem */
+}
+
+/* На сенсорных нет hover — сразу показываем цветные изображения */
+.main__gallery-wrap img {
+    filter: none;
+    width: 75vw;
+    /* Крупнее кадр, чтобы прокрутка ощущалась каруселью */
+    max-width: 8rem;
+    /* Не слишком огромные на больших телефонах */
+}
+
+/* Кнопки прокрутки — крупнее для пальцев */
+.gallery__btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+/** MAIN__GALLERY-POPUP **/
+
+.gallery-popup__close {
+    font-size: 3rem;
+    /* Крупная и удобная для нажатия */
+    padding: 0.25rem 0.5rem;
+    /* Увеличиваем tappable-область */
+}
+
+/* ====== Мелкие правки ====== */
+hr {
+    margin: 8px 0;
+}

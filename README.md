@@ -2,9 +2,9 @@
 
 ## Roadmap
 - ~~New media icons;~~
-- New logo and main icon;
-- The gallery is black and white, but it turns into colors when navigating to the content;
-- Pop-up gallery images;
+- ~~New logo and main icon;~~
+- ~~The gallery is black and white, but it turns into colors when navigating to the content;~~
+- ~~Pop-up gallery images;~~
 - Floating content of the page content;
 - Adaptive content display;
 - Toggle to switch the theme;
@@ -14,12 +14,21 @@
 
 ## Version List
 
+### Ver. 00.06.
+- 
+
+### Ver. 00.05.09.08.25
+- Added `gallery pop-up` with `overlay`, `close button`, and smooth fade-in effect;
+- Gallery preview images are now displayed in black & white, switching to full color on hover;
+- Preview style for mobile devices;
+- New custom logo, `16x16`, `24x24`, `55x55`, `240x240` in different colors.
+
 ### Ver. 00.04.03.08.25
-- Changing the content template in the footer to copyright;
+- Changing the content template in the `footer` to copyright;
 
 ### Ver. 00.03.02.08.25
 - Moving Content;
-- Sorting the CSS code;
+- Sorting the `css` code;
 - Minor fixes;
 - Two main font families;
 - Corrected gallery view;

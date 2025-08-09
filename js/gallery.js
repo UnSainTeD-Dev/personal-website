@@ -35,3 +35,38 @@ btnNext.addEventListener('click', () => {
 
 window.addEventListener('load', updateGallery);
 window.addEventListener('resize', updateGallery);
+
+// === Gallery Pop-up Logic ===
+
+const popup = document.getElementById('gallery-popup');
+const popupImage = document.getElementById('popup-image');
+const popupOverlay = document.getElementById('popup-overlay');
+const popupClose = document.getElementById('popup-close');
+
+// Открытие модалки с плавным появлением
+track.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', () => {
+        popupImage.src = img.src;
+        popup.style.display = 'block';
+
+        // Небольшая задержка, чтобы transition сработал
+        requestAnimationFrame(() => {
+            popup.classList.add('show');
+        });
+    });
+});
+
+// Закрытие модалки (резко)
+function closePopup() {
+    popup.classList.remove('show'); // сразу убираем прозрачность
+    popup.style.display = 'none';   // мгновенное исчезновение
+}
+
+popupOverlay.addEventListener('click', closePopup);
+popupClose.addEventListener('click', closePopup);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closePopup();
+    }
+});

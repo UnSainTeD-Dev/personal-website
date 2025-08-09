@@ -2,54 +2,81 @@
 
 body {
     background: linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%);
+    /* Градиентный фон от серого к черному */
     background-size: cover;
+    /* Растягиваем фон на весь экран */
     background-repeat: no-repeat;
+    /* Запрещаем повтор фона */
     background-attachment: fixed;
+    /* Фон фиксирован при прокрутке */
     min-height: 100vh;
+    /* Минимальная высота — на весь экран */
 }
 
 .wrapper {
     display: flex;
+    /* Делаем контейнер флексом */
     flex-direction: column;
+    /* Блоки идут сверху вниз */
     background-color: inherit;
+    /* Цвет фона как у body */
     min-height: 100vh;
+    /* На всю высоту окна */
     width: 100%;
+    /* На всю ширину */
     overflow: hidden;
+    /* Прячем всё, что выходит за пределы */
 }
 
 .container {
     max-width: 1230px;
+    /* Центрируем контент, ограничивая ширину */
     margin: 0 auto;
+    /* Центровка по горизонтали */
     padding: 0 15px;
+    /* Внутренние отступы */
 }
 
 /** HEADER **/
 
 .header__inner {
     display: flex;
+    /* Логотип и меню в одну линию */
     justify-content: space-between;
+    /* Лого слева, меню справа */
     align-items: flex-end;
+    /* Выравнивание по нижнему краю */
     font-family: 'ITC Century Std';
+    /* Основной шрифт */
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
+    /* Белый текст */
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
+    /* Лёгкая тень для читаемости */
     white-space: nowrap;
+    /* Запрещаем перенос текста */
     padding: 15px 0;
+    /* Отступы сверху и снизу */
 }
 
 .header__logo {
     display: inline-flex;
+    /* Логотип и текст в строку */
     align-items: flex-end;
-    gap: 0.5rem;
+    /* Выравнивание по низу */
+    gap: 1rem;
+    /* Расстояние между картинкой и текстом */
 }
 
 .title {
     font-size: 1.5rem;
+    /* Размер заголовка */
 }
 
 .title:hover {
     text-decoration: underline;
+    /* Подчёркивание при наведении */
 }
 
 /** HEADER__NAVIGATION **/
@@ -62,38 +89,46 @@ body {
 
 .header__nav-item {
     margin-right: 1rem;
+    /* Расстояние между пунктами */
 }
 
 .header__nav-item:last-child {
     margin-right: 0rem;
+    /* У последнего элемента отступа нет */
 }
 
 .header__nav-link {
     display: inline-flex;
+    /* Иконка и текст в одну линию */
     align-items: flex-end;
     gap: 0.5rem;
 }
 
 .header__nav-link img {
     transition: transform 0.3s ease-in-out;
+    /* Плавная анимация */
 }
 
 .header__nav-link img:hover {
     transform: scale(1.2);
+    /* Увеличение иконки при наведении */
 }
 
 .header__nav-link span:hover {
     text-decoration: underline;
+    /* Подчёркивание текста */
 }
 
 /** MAIN **/
 
 .main {
     flex: 1 1 auto;
+    /* Растягивается, заполняя доступное место */
 }
 
 .main__inner {
     display: flex;
+    /* "Обо мне" и галерея в одной линии */
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -105,10 +140,12 @@ body {
 .main__about {
     display: flex;
     flex-direction: column;
+    /* Элементы вертикально */
     justify-content: space-between;
     height: 510px;
     max-width: 300px;
     font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
     font-weight: bold;
     color: #ffffff;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
@@ -119,10 +156,13 @@ body {
 .main__about-block {
     display: flex;
     flex: 1;
+    /* Равномерное распределение по высоте */
     flex-direction: column;
     justify-content: center;
     border: 3px solid #303030;
+    /* Тонкая рамка */
     border-radius: 10px;
+    /* Скруглённые углы */
     text-align: center;
     padding: 0 0.5rem;
     overflow: hidden;
@@ -147,10 +187,14 @@ body {
 
 .main__gallery {
     position: relative;
+    /* Нужно для позиционирования кнопок */
     padding: 0px 60px;
+    /* Место для кнопок */
     overflow: hidden;
+    /* Прячем лишние картинки */
 }
 
+/* Кнопки навигации */
 .gallery__btn {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
@@ -198,25 +242,44 @@ body {
     flex-shrink: 0;
     height: 100%;
     object-fit: cover;
+    /* Обрезка с сохранением пропорций */
     filter: grayscale(100%);
+    /* Чёрно-белое изображение */
     transition: filter 0.3s ease;
+    /* Плавный переход цвета */
 }
 
+/* При наведении — цветное */
 .main__gallery-wrap img:hover {
     filter: none;
 }
+
+/* .main__gallery-wrap img:focus-visible {
+    filter: none;
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+} */
+
+/* На сенсорных устройствах — всегда цвет */
+/* @media (hover: none) {
+    .main__gallery-wrap img {
+        filter: none;
+    }
+} */
 
 /** MAIN__GALLERY-POPUP **/
 
 .gallery-popup {
     position: fixed;
     display: none;
+    /* Скрыт по умолчанию */
     background-color: transparent;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 99;
+    /* Поверх всего */
 }
 
 .gallery-popup__overlay {
@@ -244,11 +307,14 @@ body {
     height: auto;
     width: auto;
     opacity: 0;
+    /* Исходно прозрачное */
     transition: opacity 0.3s ease;
+    /* Плавное появление */
 }
 
 .gallery-popup.show img {
     opacity: 1;
+    /* Появляется при активации */
 }
 
 .gallery-popup__close {
