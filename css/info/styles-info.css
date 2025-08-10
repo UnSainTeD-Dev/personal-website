@@ -87,6 +87,12 @@ body {
     font-size: 1rem;
 }
 
+#nav-pages {
+    /* Размер строки и шрифта для названий страниц */
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+}
+
 .header__nav-item {
     margin-right: 1rem;
     /* Расстояние между пунктами */
@@ -140,12 +146,10 @@ body {
 .main__about {
     display: flex;
     flex-direction: column;
-    /* Элементы вертикально */
     justify-content: space-between;
     height: 510px;
     max-width: 300px;
     font-family: 'Courier New', Courier, monospace;
-    /* Моноширинный шрифт */
     font-weight: bold;
     color: #ffffff;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
@@ -160,9 +164,7 @@ body {
     flex-direction: column;
     justify-content: center;
     border: 3px solid #303030;
-    /* Тонкая рамка */
     border-radius: 10px;
-    /* Скруглённые углы */
     text-align: center;
     padding: 0 0.5rem;
     overflow: hidden;
