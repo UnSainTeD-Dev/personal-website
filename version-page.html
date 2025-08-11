@@ -6,52 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Version List сайта `UnSainTeD-Dev`.">
-    <link rel="stylesheet" href="css/null-setup.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/version-page.css">
-    <link rel="stylesheet" href="css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
-    <link rel="shortcut icon" href="img/logo-240x240.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/css/version-page.css">
+    <link rel="stylesheet" href="/css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
+    <link rel="shortcut icon" href="/img/logo-240x240.ico" type="image/x-icon">
     <title>UnSainTeD-Dev — Version List</title>
 </head>
 
-<body>
+<body data-active="Version List">
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo" title="Перейти на главную страницу" href="index.html">
-                        <img src="img/logo/logo-white.svg" alt="UnSainTeD-Dev logo">
-                        <h1 class="title">UnSainTeD-Dev</h1>
-                    </a>
-                    <ul class="header__nav">
-                        <li class="header__nav-item" id="nav-pages">
-                            <a class="header__nav-link" title="Перейти на страницу дорожной карты"
-                                href="roadmap-page.html">
-                                <span>RoadMap</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="header__nav">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" title="Перейти на GitHub профиль" target="_blank"
-                                href="https://github.com/UnSainTeD-Dev">
-                                <img src="img/icons/github-icon.svg" alt="" aria-hidden="true">
-                                <span>GitHub</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" title="Перейти на Steam профиль" target="_blank"
-                                href="https://steamcommunity.com/id/unsted/">
-                                <img src="img/icons/steam-icon.svg" alt="" aria-hidden="true">
-                                <span>Steam</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
+        <header id="site-header" data-src="partials/header.html">
+            <div class="header-placeholder"></div>
         </header>
-
         <main class="main">
             <div class="container">
                 <div class="main__inner">
@@ -80,7 +48,9 @@
                                     <li>Stylization, <code>aside</code> from the content;</li>
                                     <li>Added a <code>RoadMap Page</code>, content filling, styling;</li>
                                     <li>Added a <code>meta name="description"</code>.</li>
-                                    <li>Refactor <code>fonts.css</code>: fix src commas, set weights, add <code>font-stretch</code>, dedupe, woff2/woff only, swap.</li>
+                                    <li>Refactor <code>fonts.css</code>: fix src commas, set weights, add
+                                        <code>font-stretch</code>, dedupe, woff2/woff only, swap.
+                                    </li>
                                 </ul>
                             </section>
 
@@ -156,7 +126,9 @@
                                     <li>Implementation of the file <code>null-setup.css</code>;</li>
                                     <li>Initial layout structure;</li>
                                     <li>New <code>fonts.css</code> with ITC Century Std font;</li>
-                                    <li>New design of the <code>header</code>, <code>logo</code>, four <code>icons</code> for media links.</li>
+                                    <li>New design of the <code>header</code>, <code>logo</code>, four
+                                        <code>icons</code> for media links.
+                                    </li>
                                 </ul>
                             </section>
                         </article>
@@ -170,13 +142,14 @@
                 <hr>
                 <div class="footer__inner">
                     <p class="footer__copyright">
-                        Copyright © <a title="Перейти на GitHub профиль" target="_blank"
+                        Copyright © <a title="Перейти на GitHub профиль" target="_blank" rel="noopener noreferrer"
                             href="https://github.com/UnSainTeD-Dev">UnSainTeD-Dev</a>, 2025.
                     </p>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="/assets/js/include-header.js" defer></script>
 </body>
 
 </html>

@@ -16,9 +16,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 a{color:inherit;}
 hr {height: 3px;border: none;margin: 5px 0;background: linear-gradient(to right, transparent, #333, transparent);}
 
+:root {--container-max: 1230px;--focus-ring: 2px;--border-radius: 8px;}
+
 /* background: linear-gradient(to right, transparent, #333, transparent); */
 /* background: linear-gradient(to right, #444, #888, #444); */
 /* background: linear-gradient(to right, #ff5c00, #a300ff, #00fff7);box-shadow: 0 0 6px rgba(255, 92, 0, 0.5); */
+
+/** HEADER PLACEHOLDER **/
+
+.header-placeholder {height: 64px;}
+.header--enter {opacity: 0;}
+.header--ready {transition: opacity .3s ease-in;opacity: 1;}
 
 /** PAGE STYLE **/
 
@@ -33,14 +41,14 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    background-color: inherit;
+    /* ? background-color: inherit; */
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
 .container {
-    max-width: 1230px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -50,6 +58,7 @@ position
 display
 flex
 flex-direction
+grid
 justify-content
 box-sizing
 object-fit
@@ -60,6 +69,7 @@ background
     background-attachment
 color
 border
+    border-radius
 top
 bottom
 left

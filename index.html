@@ -6,56 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Домашняя страница сайта `UnSainTeD-Dev`.">
-    <link rel="stylesheet" href="css/null-setup.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
-    <link rel="shortcut icon" href="img/logo-240x240.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
+    <link rel="shortcut icon" href="/img/logo-240x240.ico" type="image/x-icon">
     <title>UnSainTeD-Dev</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo" title="Перейти на главную страницу" href="index.html">
-                        <img src="img/logo/logo-white.svg" alt="UnSainTeD-Dev logo">
-                        <h1 class="title">UnSainTeD-Dev</h1>
-                    </a>
-                    <ul class="header__nav">
-                        <li class="header__nav-item" id="nav-pages">
-                            <a class="header__nav-link" title="Перейти на страницу версий"
-                                href="version-page.html">
-                                <span>Version List</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item" id="nav-pages">
-                            <a class="header__nav-link" title="Перейти на страницу дорожной карты"
-                                href="roadmap-page.html">
-                                <span>RoadMap</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="header__nav">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" title="Перейти на GitHub профиль" target="_blank"
-                                href="https://github.com/UnSainTeD-Dev">
-                                <img src="img/icons/github-icon.svg" alt="" aria-hidden="true">
-                                <span>GitHub</span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" title="Перейти на Steam профиль" target="_blank"
-                                href="https://steamcommunity.com/id/unsted/">
-                                <img src="img/icons/steam-icon.svg" alt="" aria-hidden="true">
-                                <span>Steam</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
+        <header id="site-header" data-src="/partials/header.html">
+            <div class="header-placeholder"></div>
         </header>
         <main class="main">
             <div class="container">
@@ -70,7 +33,7 @@
                         <div class="main__about-block">
                             <h2>My projects</h2>
                             <p>
-                                <a title="Перейти на GitHub проекта" target="_blank"
+                                <a title="Перейти на GitHub проекта" target="_blank" rel="noopener noreferrer"
                                     href="https://github.com/UnSainTeD-Dev/personal-website/">"Template for Pesronal
                                     Website"</a>
                             </p>
@@ -86,13 +49,13 @@
                         <button class="gallery__btn gallery__btn--prev">‹</button>
                         <div class="gallery__viewport">
                             <div class="main__gallery-wrap" id="gallery-track">
-                                <img src="img/gallery/ref-1.jpg" alt="Image 1">
-                                <img src="img/gallery/ref-2.jpg" alt="Image 2">
-                                <img src="img/gallery/ref-3.png" alt="Image 3">
-                                <img src="img/gallery/ref-4.png" alt="Image 4">
-                                <img src="img/gallery/ref-5.png" alt="Image 5">
-                                <img src="img/gallery/ref-6.jpg" alt="Image 6">
-                                <img src="img/gallery/ref-7.png" alt="Image 7">
+                                <img src="/img/gallery/ref-1.jpg" alt="Image 1">
+                                <img src="/img/gallery/ref-2.jpg" alt="Image 2">
+                                <img src="/img/gallery/ref-3.png" alt="Image 3">
+                                <img src="/img/gallery/ref-4.png" alt="Image 4">
+                                <img src="/img/gallery/ref-5.png" alt="Image 5">
+                                <img src="/img/gallery/ref-6.jpg" alt="Image 6">
+                                <img src="/img/gallery/ref-7.png" alt="Image 7">
                             </div>
                         </div>
                         <button class="gallery__btn gallery__btn--next">›</button>
@@ -100,7 +63,8 @@
                     <div class="gallery-popup" id="gallery-popup">
                         <div class="gallery-popup__overlay" id="popup-overlay"></div>
                         <div class="gallery-popup__content">
-                            <img src="" alt="popup image" id="popup-image">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" alt="popup image"
+                                id="popup-image">
                             <button class="gallery-popup__close" id="popup-close">×</button>
                         </div>
                     </div>
@@ -112,14 +76,15 @@
                 <hr>
                 <div class="footer__inner">
                     <p class="footer__copyright">
-                        Copyright © <a title="Перейти на GitHub профиль" target="_blank"
+                        Copyright © <a title="Перейти на GitHub профиль" target="_blank" rel="noopener noreferrer"
                             href="https://github.com/UnSainTeD-Dev">UnSainTeD-Dev</a>, 2025.
                     </p>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="js/gallery.js"></script>
+    <script src="/assets/js/include-header.js" defer></script>
+    <script src="/assets/js/gallery.js"></script>
 </body>
 
 </html>

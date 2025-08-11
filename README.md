@@ -17,8 +17,8 @@
 - Admin Panel;
 - Return visible focus for gallery links/buttons and arrows by adding styles :focus-visible instead of completely disabling outline null-setup;
 - Bring the common header, footer, and container styles into a single base.css to avoid duplication between version-page styles files;
-- Add rel="noopener noreferrer" for all external links with target="_blank" index version-page; | RM
-- Combine header navigation lists into one <nav> to improve index semantics; | RM
+- ~~Add rel="noopener noreferrer" for all external links with target="_blank" index version-page; | RM~~
+- ~~Combine header navigation lists into one <nav> to improve index semantics; | RM~~
 - Introduce a CSS variable system in :root for colors, margins, radii, and shadows version-pagestyles; | RM
 - Set up a single typographic scale and line-height for a consistent rhythm of the text version-pagestyles; | RM
 - Add an up button above the sidebar;
@@ -26,6 +26,20 @@
 - Black and white, gradient design.
 
 ## Version List
+
+### Ver. 00.08.12.08.25
+- Optimization and reduction of the css code;
+- 
+
+### Ver. 00.07.11.08.25
+- Slight optimization of the `Gallery popup` code;
+- Add `rel="noopener noreferrer"` for all external links with `target="_blank"`;
+- New `experiment/header` branch for `header` innovations;
+- Solved the problem with the ITC font in the `header`;
+- `Grid` instead of `flex`;
+- Connection `header.html` to the pages;
+- Fixed file paths;
+- Fixed the issue with the "header jump" when loading the page.
 
 ### Ver. 00.06.10.08.25
 - New page of the `Version List`;

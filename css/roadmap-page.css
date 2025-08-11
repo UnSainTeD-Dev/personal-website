@@ -1,71 +1,3 @@
-/** HEADER **/
-
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'ITC Century Std';
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1rem;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
-    padding: 15px 0;
-}
-
-.header__logo {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 0.5rem;
-}
-
-.title {
-    font-size: 1.5rem;
-}
-
-.title:hover {
-    text-decoration: underline;
-}
-
-/** HEADER__NAVIGATION **/
-
-.header__nav {
-    display: flex;
-    align-items: flex-end;
-    font-size: 1rem;
-}
-
-#nav-pages {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-}
-
-.header__nav-item {
-    margin-right: 1rem;
-}
-
-.header__nav-item:last-child {
-    margin-right: 0rem;
-}
-
-.header__nav-link {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 0.5rem;
-}
-
-.header__nav-link img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.header__nav-link img:hover {
-    transform: scale(1.2);
-}
-
-.header__nav-link span:hover {
-    text-decoration: underline;
-}
-
 /** MAIN **/
 
 .main {
@@ -120,6 +52,11 @@
     border-color: #00ff33;
 }
 
+#step-2 {
+    color: #00ff33;
+    border-color: #00ff33;
+}
+
 /* Разделительные линии между пунктами */
 .step:not(:last-child) {
     border-bottom: 2px solid var(--accent);
@@ -159,7 +96,12 @@
 }
 
 #step-index-1 {
-    background: transparent;
+    /* background: transparent; */
+    border: 2px solid #00ff33;
+}
+
+#step-index-2 {
+    /* background: transparent; */
     border: 2px solid #00ff33;
 }
 
@@ -208,6 +150,10 @@
     color: #00ff33;
 }
 
+#step-text-2 {
+    color: #00ff33;
+}
+
 /* На ширине ≥ 641px делим строку пополам */
 @media (min-width: 641px) {
 
@@ -229,12 +175,14 @@ code {
 
 .footer__inner {
     line-height: 1.2rem;
-    font-family: 'ITC Century Std';
-    font-weight: bold;
+    /*? */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1rem;
     color: #ffffff;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
+    /*? */
     padding: 15px 0;
 }
 
