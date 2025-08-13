@@ -6,12 +6,10 @@
 
 .main__inner {
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-style: normal;
+    font: var(--main-font);
     font-size: 1rem;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
+    color: var(--main-color);
+    text-shadow: var(--main-text-shadow);
     margin: 0;
     padding: 15px 0;
 }
@@ -38,9 +36,9 @@
 
 /** STEPS **/
 
-/* Базовый блок */
 .step {
-    --accent: #ffffff;
+    --color: var(--main-color);
+    --color-done: #00ff33;
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
@@ -48,21 +46,24 @@
 }
 
 #step-1 {
-    color: #00ff33;
-    border-color: #00ff33;
+    color: var(--color-done);
+    border-color: var(--color-done);
 }
 
 #step-2 {
-    color: #00ff33;
-    border-color: #00ff33;
+    color: var(--color-done);
+    border-color: var(--color-done);
 }
 
-/* Разделительные линии между пунктами */
+#step-3 {
+    color: var(--color-done);
+    border-color: var(--color-done);
+}
+
 .step:not(:last-child) {
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 2px solid var(--color);
 }
 
-/* Чёт/нечёт выравнивание и вертикальные линии */
 .step:nth-child(odd) {
     align-items: flex-start;
 }
@@ -72,37 +73,36 @@
 }
 
 .step:nth-child(odd):not(:first-child) {
-    border-left: 2px solid var(--accent);
+    border-left: 2px solid var(--color);
 }
 
 .step:nth-child(even):not(:last-child) {
-    border-right: 2px solid var(--accent);
+    border-right: 2px solid var(--color);
 }
 
-/* Индекс-точка: общие стили */
 .step .step-index {
     position: absolute;
     top: 50%;
     width: 40px;
     height: 40px;
     background: #151317;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 #step-index-1 {
-    /* background: transparent; */
-    border: 2px solid #00ff33;
+    border: 2px solid var(--color-done);
 }
 
 #step-index-2 {
-    /* background: transparent; */
-    border: 2px solid #00ff33;
+    border: 2px solid var(--color-done);
+}
+
+#step-index-3 {
+    border: 2px solid var(--color-done);
 }
 
 /* Позиционирование индекс-точки для чёт/нечёт */
@@ -116,7 +116,6 @@
     transform: translate(50%, -50%);
 }
 
-/* Спец-случаи для первой и последней точки */
 .step:first-child .step-index {
     top: auto;
     bottom: 0;
@@ -147,14 +146,17 @@
 }
 
 #step-text-1 {
-    color: #00ff33;
+    color: var(--color-done);
 }
 
 #step-text-2 {
-    color: #00ff33;
+    color: var(--color-done);
 }
 
-/* На ширине ≥ 641px делим строку пополам */
+#step-text-3 {
+    color: var(--color-done);
+}
+
 @media (min-width: 641px) {
 
     .step .step-label,
@@ -164,25 +166,13 @@
     }
 }
 
-code {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    padding: 0.1rem 0.3rem;
-    font-family: Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 /** FOOTER **/
 
 .footer__inner {
     line-height: 1.2rem;
-    /*? */
-    font-family: 'Georgia', 'Times New Roman', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
-    /*? */
+    font: var(--footer-font);
+    color: var(--main-color);
+    text-shadow: var(--main-text-shadow);
     padding: 15px 0;
 }
 

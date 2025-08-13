@@ -1,15 +1,30 @@
 # UnSainTeD-Dev | personal-website
 
+## Version List
+
+[CHANGELOG.md](CHANGELOG.md)
+
+🟢 RELEASED — the version has been released.
+🟠 UNRELEASED — work on this version is finished (not released).
+🟡 MOVED TO — the changes from this version were moved to the next one.
+🔴 CANCELED — the release of this version has been permanently canceled.
+🔵 IN PROGRESS — this version is in progress.
+
+- [Ver. 0.0.10] — 🔵 IN PROGRESS
+- [Ver. 0.0.9 | 2025-08-13 D10](CHANGELOG.md#ver-009--2025-08-13) — 🟠 UNRELEASED  
+    Includes changes moved from: Ver. 0.0.8
+- [Ver. 0.0.8 | 2025-08-12 D9](CHANGELOG.md#ver-008--2025-08-12) — 🟡 MOVED TO → Ver. 0.0.9
+- [Ver. 0.0.7 | 2025-08-11 D8](CHANGELOG.md#ver-007--2025-08-11) — 🟠 UNRELEASED
+- [Ver. 0.0.6 | 2025-08-10 D7](CHANGELOG.md#ver-006--2025-08-10) — 🟠 UNRELEASED
+- [Ver. 0.0.5 | 2025-08-09 D6](CHANGELOG.md#ver-005--2025-08-09) — 🟠 UNRELEASED
+- [Ver. 0.0.4 | 2025-08-03 D5](CHANGELOG.md#ver-004--2025-08-03) — 🟠 UNRELEASED
+- [Ver. 0.0.3 | 2025-08-02 D4](CHANGELOG.md#ver-003--2025-08-02) — 🟠 UNRELEASED
+- [Ver. 0.0.2 | 2025-07-30 D3](CHANGELOG.md#ver-002--2025-07-30) — 🟠 UNRELEASED
+- [Ver. 0.0.1 | 2025-07-28 D2](CHANGELOG.md#ver-001--2025-07-28) — 🟠 UNRELEASED
+- [Ver. 0.0.0 | 2025-07-27 D1](CHANGELOG.md#ver-000--2025-07-27) — 🟠 UNRELEASED
+
 ## Roadmap
-- ~~Roadmap page;~~
-- ~~New media icons;~~
-- ~~New logo and main icon;~~
-- ~~The gallery is black and white, but it turns into colors when navigating to the content;~~
-- ~~Pop-up gallery images;~~
-- ~~New page `Version List`;~~
-- ~~Add a fixed navbar to the right in the `Version Page`;~~
-- ~~Add meta name="description" on the main page and, if necessary, connect the SVG-favicon index;~~
-- ~~Clean up fonts.css: fix the src syntax (commas between local()), remove duplicates and unnecessary fonts;~~
+
 - Floating content of the page content;
 - Adaptive content display;
 - Toggle to switch the theme;
@@ -17,72 +32,8 @@
 - Admin Panel;
 - Return visible focus for gallery links/buttons and arrows by adding styles :focus-visible instead of completely disabling outline null-setup;
 - Bring the common header, footer, and container styles into a single base.css to avoid duplication between version-page styles files;
-- ~~Add rel="noopener noreferrer" for all external links with target="_blank" index version-page; | RM~~
-- ~~Combine header navigation lists into one <nav> to improve index semantics; | RM~~
 - Introduce a CSS variable system in :root for colors, margins, radii, and shadows version-pagestyles; | RM
-- Set up a single typographic scale and line-height for a consistent rhythm of the text version-pagestyles; | RM
+- Set up a single typographic scale & line-height for consistent text rhythm | RM
 - Add an up button above the sidebar;
 - Ru/En version;
 - Black and white, gradient design.
-
-## Version List
-
-### Ver. 00.08.12.08.25
-- Optimization and reduction of the css code;
-- 
-
-### Ver. 00.07.11.08.25
-- Slight optimization of the `Gallery popup` code;
-- Add `rel="noopener noreferrer"` for all external links with `target="_blank"`;
-- New `experiment/header` branch for `header` innovations;
-- Solved the problem with the ITC font in the `header`;
-- `Grid` instead of `flex`;
-- Connection `header.html` to the pages;
-- Fixed file paths;
-- Fixed the issue with the "header jump" when loading the page.
-
-### Ver. 00.06.10.08.25
-- New page of the `Version List`;
-- Updating the content to the current version;
-- Stylization, `aside` from the content;
-- Added a `RoadMap Page`, content filling, styling;
-- Added a `meta name="description"`;
-- Refactor `fonts.css`: fix src commas, set weights, add `font-stretch`, dedupe, woff2/woff only, swap.
-
-### Ver. 00.05.09.08.25
-- Added `gallery pop-up` with overlay, `close button`, and smooth fade-in effect;
-- Gallery preview images are now displayed in black & white, switching to full color on hover;
-- Preview style for mobile devices;
-- New custom logo, 16x16, 24x24, 55x55, 240x240 in different colors.
-
-### Ver. 00.04.03.08.25
-- Changing the content template in the `footer` to copyright;
-
-### Ver. 00.03.02.08.25
-- Moving Content;
-- Sorting the `css` code;
-- Minor fixes;
-- Two main font families;
-- Corrected gallery view;
-- New gallery images.
-
-### Ver. 00.02.30.07.25
-- Added a small gallery template;
-- Fixing a background issue;
-- Small `css` optimizations.
-
-### Ver. 00.01.28.07.25
-- Redesign in strict, calm gradient colors of black and white;
-- Added a similar `footer` and an empty `main`;
-- Adding two media links instead of four;
-- Added the separator `hr`;
-- Small animations of icons on hover;
-- Added 3 `About` blocks to `main`.
-
-### Ver. 00.00.27.07.2025
-- New branch `experiment/layout`;
-- New file `index.html`, `styles.css`;
-- Implementation of the file `null-setup.css`;
-- Initial layout structure;
-- New `fonts.css` with ITC Century Std font;
-- New design of the `header`, `logo`, four `icons` for media links.

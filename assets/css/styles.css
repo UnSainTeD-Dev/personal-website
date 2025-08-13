@@ -6,8 +6,10 @@
 
 .main__inner {
     display: flex;
-    /* ? justify-content: center; */
     align-items: center;
+    font: var(--main-font);
+    text-shadow: var(--main-text-shadow);
+    color: var(--main-color);
     font-size: 1rem;
     gap: 1rem;
     padding: 15px 0;
@@ -18,16 +20,9 @@
 .main__about {
     display: flex;
     flex-direction: column;
-    /* ? justify-content: space-between; */
     height: 510px;
     max-width: 300px;
-    /* ? */
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
     font-size: 1rem;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
-    /* ? */
     gap: 1rem;
 }
 
