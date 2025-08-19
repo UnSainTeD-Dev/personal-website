@@ -170,15 +170,9 @@
 /** FOOTER **/
 
 .footer__inner {
-    line-height: 1.2rem;
-    /*? */
-    font-family: 'Georgia', 'Times New Roman', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: #ffffff;
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5);
-    /*? */
+    font: var(--footer-font);
+    color: var(--main-color);
+    text-shadow: var(--main-text-shadow);
     padding: 15px 0;
 }
 

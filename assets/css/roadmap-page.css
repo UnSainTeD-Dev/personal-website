@@ -38,24 +38,14 @@
 
 .step {
     --color: var(--main-color);
-    --color-done: #00ff33;
+    --color-done: #646464;
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
     position: relative;
 }
 
-#step-1 {
-    color: var(--color-done);
-    border-color: var(--color-done);
-}
-
-#step-2 {
-    color: var(--color-done);
-    border-color: var(--color-done);
-}
-
-#step-3 {
+#step-1, #step-2, #step-3 {
     color: var(--color-done);
     border-color: var(--color-done);
 }
@@ -85,7 +75,7 @@
     top: 50%;
     width: 40px;
     height: 40px;
-    background: #151317;
+    background: #29282a;
     border: 2px solid var(--color);
     border-radius: 50%;
     display: flex;
@@ -93,15 +83,7 @@
     justify-content: center;
 }
 
-#step-index-1 {
-    border: 2px solid var(--color-done);
-}
-
-#step-index-2 {
-    border: 2px solid var(--color-done);
-}
-
-#step-index-3 {
+#step-index-1, #step-index-2, #step-index-3 {
     border: 2px solid var(--color-done);
 }
 
@@ -136,24 +118,15 @@
 
 /* Размеры и отступы */
 .step .step-label {
-    font-size: 14px;
     margin-bottom: 5px;
 }
 
 .step .step-text {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #cccccc;
 }
 
-#step-text-1 {
-    color: var(--color-done);
-}
-
-#step-text-2 {
-    color: var(--color-done);
-}
-
-#step-text-3 {
+#step-text-1, #step-text-2, #step-text-3 {
     color: var(--color-done);
 }
 
@@ -169,7 +142,6 @@
 /** FOOTER **/
 
 .footer__inner {
-    line-height: 1.2rem;
     font: var(--footer-font);
     color: var(--main-color);
     text-shadow: var(--main-text-shadow);
