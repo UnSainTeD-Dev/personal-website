@@ -1,0 +1,157 @@
+/** MAIN **/
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main__inner {
+    display: flex;
+    font: var(--main-font);
+    font-size: 1rem;
+    color: var(--main-color);
+    text-shadow: var(--main-text-shadow);
+    margin: 0;
+    padding: 15px 0;
+}
+
+/** MAIN CHANGELOG-SECTIONS **/
+
+.main__roadmap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.main__roadmap h2 {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.main__roadmap-steps {
+    padding: 30px 50px;
+}
+
+/** STEPS **/
+
+.step {
+    --color: var(--main-color);
+    --color-done: #646464;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    position: relative;
+}
+
+#step-1, #step-2, #step-3 {
+    color: var(--color-done);
+    border-color: var(--color-done);
+}
+
+.step:not(:last-child) {
+    border-bottom: 2px solid var(--color);
+}
+
+.step:nth-child(odd) {
+    align-items: flex-start;
+}
+
+.step:nth-child(even) {
+    align-items: flex-end;
+}
+
+.step:nth-child(odd):not(:first-child) {
+    border-left: 2px solid var(--color);
+}
+
+.step:nth-child(even):not(:last-child) {
+    border-right: 2px solid var(--color);
+}
+
+.step .step-index {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: #29282a;
+    border: 2px solid var(--color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#step-index-1, #step-index-2, #step-index-3 {
+    border: 2px solid var(--color-done);
+}
+
+/* Позиционирование индекс-точки для чёт/нечёт */
+.step:nth-child(odd) .step-index {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.step:nth-child(even) .step-index {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.step:first-child .step-index {
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 2px) !important;
+}
+
+.step:last-child .step-index {
+    top: 0;
+    transform: translate(50%, -2px) !important;
+}
+
+/* Тексты: общие правила */
+.step .step-label,
+.step .step-text {
+    flex: 1 0 100%;
+    width: 100%;
+}
+
+/* Размеры и отступы */
+.step .step-label {
+    margin-bottom: 5px;
+}
+
+.step .step-text {
+    font-size: 0.75rem;
+    color: #cccccc;
+}
+
+#step-text-1, #step-text-2, #step-text-3 {
+    color: var(--color-done);
+}
+
+@media (min-width: 641px) {
+
+    .step .step-label,
+    .step .step-text {
+        flex: 1 0 50%;
+        width: 50%;
+    }
+}
+
+/** FOOTER **/
+
+.footer__inner {
+    font: var(--footer-font);
+    color: var(--main-color);
+    text-shadow: var(--main-text-shadow);
+    padding: 15px 0;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright a:hover {
+    text-decoration: underline;
+}

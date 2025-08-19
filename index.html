@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Домашняя страница сайта `UnSainTeD-Dev`.">
+    <link rel="stylesheet" href="/assets/css/default.css">
+    <!-- <link rel="stylesheet" href="/css/fonts.css"> -->
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
+    <link rel="shortcut icon" href="/img/logo-240x240.ico" type="image/x-icon">
+    <title>UnSainTeD-Dev</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="site-header" data-src="/partials/header.html">
+            <div class="header-placeholder"></div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <div class="main__about">
+                        <div class="main__about-block">
+                            <h2>About me</h2>
+                            <p>
+                                Начинающий веб-разработчик. <br> Изучаю HTML, CSS, JavaScript.
+                            </p>
+                        </div>
+                        <div class="main__about-block">
+                            <h2>My projects</h2>
+                            <p>
+                                <a title="Перейти на GitHub проекта" target="_blank" rel="noopener noreferrer"
+                                    href="https://github.com/UnSainTeD-Dev/personal-website/">"Template for Pesronal
+                                    Website"</a>
+                            </p>
+                        </div>
+                        <div class="main__about-block">
+                            <h2>My links</h2>
+                            <p>
+                                GitHub <br> Steam <br> DTF
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__gallery">
+                        <button class="gallery__btn gallery__btn--prev">‹</button>
+                        <div class="gallery__viewport">
+                            <div class="main__gallery-wrap" id="gallery-track">
+                                <img src="/img/gallery/ref-1.jpg" alt="Image 1">
+                                <img src="/img/gallery/ref-2.jpg" alt="Image 2">
+                                <img src="/img/gallery/ref-3.png" alt="Image 3">
+                                <img src="/img/gallery/ref-4.png" alt="Image 4">
+                                <img src="/img/gallery/ref-5.png" alt="Image 5">
+                                <img src="/img/gallery/ref-6.jpg" alt="Image 6">
+                                <img src="/img/gallery/ref-7.png" alt="Image 7">
+                            </div>
+                        </div>
+                        <button class="gallery__btn gallery__btn--next">›</button>
+                    </div>
+                    <div class="gallery-popup" id="gallery-popup">
+                        <div class="gallery-popup__overlay" id="popup-overlay"></div>
+                        <div class="gallery-popup__content">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" alt="popup image"
+                                id="popup-image">
+                            <button class="gallery-popup__close" id="popup-close">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <hr>
+                <div class="footer__inner">
+                    <p class="footer__copyright">
+                        Copyright © <a title="Перейти на GitHub профиль" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/UnSainTeD-Dev">UnSainTeD-Dev</a>, 2025.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/assets/js/include-header.js" defer></script>
+    <script src="/assets/js/gallery.js"></script>
+</body>
+
+</html>

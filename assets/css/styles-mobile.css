@@ -1,0 +1,71 @@
+/** MAIN **/
+
+.main__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 0;
+}
+
+.main__about {
+    height: auto;
+    /* Сбрасываем фиксированную высоту */
+    width: 100%;
+    max-width: 620px;
+    /* Ограничиваем ширину, но не жёстко 300px */
+    margin: 0 auto;
+}
+
+.main__about-block {
+    min-height: 110px;
+    /* Комфортная высота карточек на мобилке */
+}
+
+/** MAIN__GALLERY **/
+
+.main__gallery {
+    padding: 0 20px;
+    /* Сужаем боковые поля под экран телефона */
+}
+
+.gallery__viewport {
+    max-width: 100%;
+    /* Не ограничиваем до 800px на мобиле */
+}
+
+.main__gallery-wrap {
+    height: 60vw;
+    /* Относительно ширины экрана */
+    max-height: 24rem;
+    /* Но не выше 24rem */
+}
+
+.main__gallery-wrap img {
+    width: 75vw;
+    /* Крупнее кадр, чтобы прокрутка ощущалась каруселью */
+    max-width: 8rem;
+    /* Не слишком огромные на больших телефонах */
+    filter: none;
+    /* На сенсорных нет hover — сразу показываем цвет */
+}
+
+.gallery__btn {
+    font-size: 1.2rem;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+}
+
+/** MAIN__GALLERY-POPUP **/
+
+.gallery-popup__close {
+    font-size: 3rem;
+    /* Крупная и удобная для нажатия */
+    padding: 0.25rem 0.5rem;
+    /* Увеличиваем tappable-область */
+}
+
+/** MISC **/
+
+hr {
+    margin: 8px 0;
+}

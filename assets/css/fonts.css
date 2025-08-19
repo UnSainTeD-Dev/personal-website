@@ -1,0 +1,209 @@
+/** ITC Century Std **/
+
+/* ! UNUSED */
+
+/* ===== Ultra / Ultra Italic ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 900;
+    src:
+        local('ITC Century Std Ultra Italic'),
+        local('CenturyStd-UltraItalic'),
+        url('../fonts/font-century-itc/CenturyStd-UltraItalic.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-UltraItalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 900;
+    src:
+        local('ITC Century Std Ultra'),
+        local('CenturyStd-Ultra'),
+        url('../fonts/font-century-itc/CenturyStd-Ultra.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-Ultra.woff') format('woff');
+    font-display: swap;
+}
+
+/* ===== Bold / Bold Italic (normal width) ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 700;
+    src:
+        local('ITC Century Std Bold Italic'),
+        local('CenturyStd-BoldItalic'),
+        url('../fonts/font-century-itc/CenturyStd-BoldItalic.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BoldItalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local('ITC Century Std Bold'),
+        local('CenturyStd-Bold'),
+        url('../fonts/font-century-itc/CenturyStd-Bold.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+/* ===== Book / Book Italic (normal width) ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 400;
+    src:
+        local('ITC Century Std Book Italic'),
+        local('CenturyStd-BookItalic'),
+        url('../fonts/font-century-itc/CenturyStd-BookItalic.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BookItalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('ITC Century Std Book'),
+        local('CenturyStd-Book'),
+        url('../fonts/font-century-itc/CenturyStd-Book.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-Book.woff') format('woff');
+    font-display: swap;
+}
+
+/* ===== Light / Light Italic (normal width) ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 300;
+    src:
+        local('ITC Century Std Light Italic'),
+        local('CenturyStd-LightItalic'),
+        url('../fonts/font-century-itc/CenturyStd-LightItalic.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-LightItalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local('ITC Century Std Light'),
+        local('CenturyStd-Light'),
+        url('../fonts/font-century-itc/CenturyStd-Light.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-Light.woff') format('woff');
+    font-display: swap;
+}
+
+/* ===== Condensed (font-stretch: condensed) ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Bold Condensed Italic'),
+        local('CenturyStd-BoldCondensedIt'),
+        url('../fonts/font-century-itc/CenturyStd-BoldCondensedIt.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BoldCondensedIt.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Bold Condensed'),
+        local('CenturyStd-BoldCondensed'),
+        url('../fonts/font-century-itc/CenturyStd-BoldCondensed.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BoldCondensed.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Book Condensed Italic'),
+        local('CenturyStd-BookCondensedIt'),
+        url('../fonts/font-century-itc/CenturyStd-BookCondensedIt.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BookCondensedIt.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Book Condensed'),
+        local('CenturyStd-BookCondensed'),
+        url('../fonts/font-century-itc/CenturyStd-BookCondensed.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-BookCondensed.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Light Condensed Italic'),
+        local('CenturyStd-LightCondensedIt'),
+        url('../fonts/font-century-itc/CenturyStd-LightCondensedIt.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-LightCondensedIt.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: condensed;
+    src:
+        local('ITC Century Std Light Condensed'),
+        local('CenturyStd-LightCondensed'),
+        url('../fonts/font-century-itc/CenturyStd-LightCondensed.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-LightCondensed.woff') format('woff');
+    font-display: swap;
+}
+
+/* ===== Ultra Condensed (font-stretch: ultra-condensed) ===== */
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: italic;
+    font-weight: 900;
+    font-stretch: ultra-condensed;
+    src:
+        local('ITC Century Std Ultra Condensed Italic'),
+        local('CenturyStd-UltraCondensedIt'),
+        url('../fonts/font-century-itc/CenturyStd-UltraCondensedIt.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-UltraCondensedIt.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Century Std';
+    font-style: normal;
+    font-weight: 900;
+    font-stretch: ultra-condensed;
+    src:
+        local('ITC Century Std Ultra Condensed'),
+        local('CenturyStd-UltraCondensed'),
+        url('../fonts/font-century-itc/CenturyStd-UltraCondensed.woff2') format('woff2'),
+        url('../fonts/font-century-itc/CenturyStd-UltraCondensed.woff') format('woff');
+    font-display: swap;
+}
