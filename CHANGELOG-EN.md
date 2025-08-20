@@ -10,6 +10,10 @@
 
 - Combines the **main** branch with **experiment/layout**.
 
+### Added
+
+- Adds three media links in the About block.
+
 ### Changes
 
 - Rethinks the structure of the content *version-page.html*.
