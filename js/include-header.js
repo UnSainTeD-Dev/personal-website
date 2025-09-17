@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         mount.innerHTML = html;
 
         if (active) {
-            const link = mount.querySelector(`.header__link[data-nav="${active}"]`);
-            if (link) link.classList.add('header__link--active');
+            const link = mount.querySelector(`.header__nav-link[data-nav="${active}"]`);
+            if (link) link.classList.add('header__nav-link--active');
         }
 
-        const current = mount.querySelector('.header__link--active');
+        const current = mount.querySelector('.header__nav-link--active');
         if (current) current.setAttribute('aria-current', 'page');
 
         const header = mount.querySelector('.header');

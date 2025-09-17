@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Version List сайта `UnSainTeD-Dev`.">
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <!-- <link rel="stylesheet" href="/css/fonts.css"> -->
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/version-page.css">
-    <link rel="stylesheet" href="/assets/css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
-    <link rel="shortcut icon" href="/img/logo-240x240.ico" type="image/x-icon">
-    <title>UnSainTeD-Dev — Version List</title>
+    <title>Version List – UnSainTeD-Dev</title>
+    <meta name="description" content="Version List page `UnSainTeD-Dev`">
+
+    <link rel="stylesheet" href="css/default.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/breakpoints.css"> -->
+
+    <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png">
+    <link rel="manifest" href="favicon.webmanifest">
 </head>
 
 <body data-active="Version List">
@@ -21,33 +24,101 @@
             <div class="header-placeholder"></div>
         </header>
         <main class="main">
-            <div class="container">
-                <div class="main__inner">
-                    <aside class="sidebar-nav">
-                        <ul class="sidebar-nav-list">
-                            <li class="sidebar-nav-item"><a href="#v-0-0-12">Ver. 0.0.9 | 2025-08-13</a></li>
+            <!-- Main Inner -->
+            <div class="main__inner">
+                <div class="container">
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item"><a href="#v-0-2-0">Ver. 0.2.0 | 2025-09-17</a></li>
+                            <!-- <li class="sidebar__item"><a href="#v-0-1-0">Ver. 0.1.0 | 2025-08-19</a></li> -->
                         </ul>
                     </aside>
-                    <div class="main__changelog">
-                        <h2>Version List</h2>
-                        <article class="main__changelog-article">
-                            <section class="changelog__entry" id="v-0-0-12">
-                                <h3><strong> Ver. 0.0.12 | 2025-08-19 (Day 12) </strong></h3>
+                    <!-- Changelog -->
+                    <section class="changelog">
+                        <h2 class="section-title changelog__title">Version List</h2>
+                        <article class="changelog__article">
+                            <section class="changelog__entry" id="v-0-2-0">
+                                <h3 class="section-subtitle changelog__subtitle">Ver. 0.2.0 | 2025-09-17 (Day 18)</h3>
                                 <div class="changelog__group">
                                     <h4 class="changelog__label">Added</h4>
                                     <ul class="changelog__article-list">
-                                        <li>Creates a new file <code>changelog.md</code>.</li>
+                                        <li>
+                                            <strong>files:</strong> adds favicon variations (<code>.ico</code>,
+                                            <code>.svg</code>, <code>.png</code>).
+                                        </li>
+                                        <li>
+                                            <strong>core:</strong> adds <em>favicon.webmanifest</em> to support PWA and
+                                            various devices.
+                                        </li>
+                                    </ul>
+                                    <h4 class="changelog__label">Changed</h4>
+                                    <ul class="changelog__article-list">
+                                        <li>
+                                            <strong>core:</strong> changes the structure of the main page.
+                                        </li>
+                                        <li>
+                                            <strong>docs:</strong> updates <em>README.md</em> — bringing documentation to a single standard, adding new data and information.
+                                        </li>
+                                        <li>
+                                            <strong>html:</strong> updates the <code>head</code> structure and meta
+                                            information.
+                                        </li>
+                                        <li>
+                                            <strong>html:</strong> splits the contents of <code>main</code> into
+                                            separate sections.
+                                        </li>
+                                        <li>
+                                            <strong>html:</strong> makes minor edits and optimizations of markup.
+                                        </li>
+                                        <li>
+                                            <strong>styles:</strong> formats and results in a uniform CSS code style.
+                                        </li>
+                                        <li>
+                                            <strong>styles:</strong> updates reset (<em>default.css</em>): makes minor
+                                            edits and disables the scrollbar via <code>::-webkit-scrollbar</code>.
+                                        </li>
+                                        <li>
+                                            <strong>styles:</strong> implements <em>header.css</em> into the common
+                                            <em>styles.css</em>.
+                                        </li>
+                                        <li>
+                                            <strong>styles:</strong> combines <em>version-page.css</em> and
+                                            <em>roadmap-page.css</em> into <em>styles.css</em>.
+                                        </li>
+                                        <li>
+                                            <strong>feature:</strong> reinterprets the roadmap section, turning it into
+                                            a slider.
+                                        </li>
+                                        <li>
+                                            <strong>scripts:</strong> updates and simplifies logic <em>gallery.js</em>.
+                                        </li>
+                                    </ul>
+                                    <h4 class="changelog__label">Deleted</h4>
+                                    <ul class="changelog__article-list">
+                                        <li>
+                                            <strong>html:</strong> removes the media link to "Steam" from the
+                                            <code>header</code>.
+                                        </li>
+                                        <li>
+                                            <strong>html:</strong> removes links to "Steam" and "DTF" from the
+                                            <code>main__about</code> block.
+                                        </li>
+                                        <li>
+                                            <strong>styles:</strong> deletes the outdated <em>styles-mobile.css</em>
+                                            file.
+                                        </li>
                                     </ul>
                                 </div>
                             </section>
                         </article>
-                    </div>
+                    </section>
                 </div>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
-                <hr>
+                <!-- Footer Inner -->
                 <div class="footer__inner">
                     <p class="footer__copyright">
                         Copyright © <a title="Перейти на GitHub профиль" target="_blank" rel="noopener noreferrer"
@@ -57,7 +128,7 @@
             </div>
         </footer>
     </div>
-    <script src="/assets/js/include-header.js" defer></script>
+    <script src="js/include-header.js" defer></script>
 </body>
 
 </html>

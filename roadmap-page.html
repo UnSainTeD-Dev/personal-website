@@ -1,85 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RoadMap сайта `UnSainTeD-Dev`.">
-    <link rel="stylesheet" href="/assets/css/default.css">
-    <!-- <link rel="stylesheet" href="/css/fonts.css"> -->
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/roadmap-page.css">
-    <link rel="stylesheet" href="/assets/css/styles-mobile.css" media="(hover: none), (pointer: coarse)">
-    <link rel="shortcut icon" href="/img/logo-240x240.ico" type="image/x-icon">
-    <title>UnSainTeD-Dev — RoadMap</title>
+    <title>RoadMap – UnSainTeD-Dev</title>
+    <meta name="description" content="RoadMap page `UnSainTeD-Dev`">
+
+    <link rel="stylesheet" href="css/default.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/breakpoints.css"> -->
+
+    <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png">
+    <link rel="manifest" href="favicon.webmanifest">
 </head>
 
 <body data-active="RoadMap">
     <div class="wrapper">
-        <header id="site-header" data-src="partials/header.html"><div class="header-placeholder"></div></header>
+        <header id="site-header" data-src="partials/header.html">
+            <div class="header-placeholder"></div>
+        </header>
         <main class="main">
-            <div class="container">
-                <div class="main__inner">
-                    <div class="main__roadmap">
-                        <h2>RoadMap</h2>
-                        <section class="main__roadmap-steps">
-                            <div class="step" id="step-1">
-                                <div class="step-index" id="step-index-1">1</div>
-                                <div class="step-label">CSS | Ver. 0.0.6 | 2025-08-10</div>
-                                <div class="step-text" id="step-text-1">Clean up fonts.css: fix src syntax, remove
-                                    duplicates & unused fonts.</div>
+            <!-- Main Inner -->
+            <div class="main__inner">
+                <div class="container">
+                    <!-- Roadmap -->
+                    <div class="roadmap">
+                        <div class="container roadmap__container">
+                            <h2 class="section-title roadmap__title">RoadMap</h2>
+                            <button class="btn roadmap__btn roadmap__btn--prev"
+                                aria-label="Previous step">&lsaquo;</button>
+                            <div class="roadmap__viewport">
+                                <ul class="roadmap__wrap-list" id="roadmap-track">
+                                    <li class="roadmap__wrap-item" id="roadmap-item-1">
+                                        <strong class="roadmap__item-title">README.md Redesign</strong>
+                                        <p class="roadmap__item-description">
+                                            Bringing documentation to a unified standard, adding new data and
+                                            information.
+                                        </p>
+                                    </li>
+                                    <li class="roadmap__wrap-item" id="roadmap-item-2">
+                                        <strong class="roadmap__item-title">Back-to-top button</strong>
+                                        <p class="roadmap__item-description">
+                                            Add a "Back to top" button above the sidebar.
+                                        </p>
+                                    </li>
+                                    <li class="roadmap__wrap-item" id="roadmap-item-3">
+                                        <strong class="roadmap__item-title">Theme switcher</strong>
+                                        <p class="roadmap__item-description">
+                                            Toggle between dark and light themes.
+                                        </p>
+                                    </li>
+                                    <li class="roadmap__wrap-item" id="roadmap-item-4">
+                                        <strong class="roadmap__item-title">Accessibility improvements</strong>
+                                        <p class="roadmap__item-description">
+                                            Add <code>aria-*</code> attributes, <code>:focus-visible</code> states,
+                                            and enhance keyboard navigation.
+                                        </p>
+                                    </li>
+                                    <li class="roadmap__wrap-item" id="roadmap-item-5">
+                                        <strong class="roadmap__item-title">Responsive design</strong>
+                                        <p class="roadmap__item-description">
+                                            Implement adaptive layout for all pages and components (containers,
+                                            grids, media queries).
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="step" id="step-2">
-                                <div class="step-index" id="step-index-2">2</div>
-                                <div class="step-label">Security | Ver. 0.0.7 | 2025-08-11</div>
-                                <div class="step-text" id="step-text-2">Ensure external links with target="_blank" use
-                                    rel="noopener
-                                    noreferrer".</div>
-                            </div>
-                            <div class="step" id="step-3">
-                                <div class="step-index" id="step-index-3">3</div>
-                                <div class="step-label">Refactor | Ver. 0.0.8 | 2025-08-12</div>
-                                <div class="step-text" id="step-text-3">Merge header nav lists into one nav for improved semantics.</div>
-                            </div>
-                            <div class="step" id="step-4">
-                                <div class="step-index" id="step-index-4">4</div>
-                                <div class="step-label">Refactor</div>
-                                <div class="step-text">Implement variable system in :root for unified colors, spacing,
-                                    radius & shadows.</div>
-                            </div>
-                            <div class="step" id="step-5">
-                                <div class="step-index" id="step-index-5">5</div>
-                                <div class="step-label">CSS</div>
-                                <div class="step-text">Set up a single typographic scale & line-height for consistent
-                                    text rhythm.</div>
-                            </div>
-                            <div class="step" id="step-6">
-                                <div class="step-index" id="step-index-6">6</div>
-                                <div class="step-label">UX</div>
-                                <div class="step-text">Add accessible “Back to top” button above sidebar (keyboard +
-                                    smooth scroll).</div>
-                            </div>
-                            <div class="step" id="step-7">
-                                <div class="step-index" id="step-index-7">7</div>
-                                <div class="step-label">UI</div>
-                                <div class="step-text">Language adaptability.</div>
-                            </div>
-                            <div class="step" id="step-8">
-                                <div class="step-index" id="step-index-8">8</div>
-                                <div class="step-label">UI</div>
-                                <div class="step-text">Black & White, gradient design.</div>
-                            </div>
-                        </section>
+                            <button class="btn roadmap__btn roadmap__btn--next" aria-label="Next step">&rsaquo;</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-
         <footer class="footer">
-            <div class="container">
-                <hr>
-                <div class="footer__inner">
+            <!-- Footer Inner -->
+            <div class="footer__inner">
+                <div class="container">
                     <p class="footer__copyright">
                         Copyright © <a title="Перейти на GitHub профиль" target="_blank" rel="noopener noreferrer"
                             href="https://github.com/UnSainTeD-Dev">UnSainTeD-Dev</a>, 2025.
@@ -88,7 +88,8 @@
             </div>
         </footer>
     </div>
-    <script src="/assets/js/include-header.js" defer></script>
+    <script src="js/include-header.js" defer></script>
+    <script src="js/roadmap.js"></script>
 </body>
 
 </html>

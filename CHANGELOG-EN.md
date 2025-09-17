@@ -1,6 +1,35 @@
 # CHANGELOG | personal-website
 
-## Ver. 0.1.1 | 2025-08-** — 🔵 IN PROGRESS
+## Ver. 0.2.1 | 2025-**-** — 🔵 IN PROGRESS
+
+## Ver. 0.2.0 | 2025-09-17 — 🟠 UNRELEASED
+
+***Day 18***
+
+### Added
+
+- **files:** adds favicon variations (`.ico`, `.svg`, `.png`).
+- **core:** adds *favicon.webmanifest* to support PWA and various devices.
+
+### Changed
+
+- **core:** changes the structure of the main page.
+- **docs:** updates *README.md* — bringing documentation to a single standard, adding new data and information.
+- **html:** updates the `<head>` structure and meta information.
+- **html:** splits the contents of `<main>` into separate sections.
+- **html:** makes minor edits and optimizations of markup.
+- **styles:** formats and results in a uniform CSS code style.
+- **styles:** updates reset (*default.css*): makes minor edits and disables the scrollbar via `::-webkit-scrollbar`.
+- **styles:** implements *header.css* into the common *styles.css*.
+- **styles:** combines *version-page.css* and *roadmap-page.css* into *styles.css*.
+- **feature:** reinterprets the roadmap section, turning it into a slider.
+- **scripts:** updates and simplifies logic *gallery.js*.
+
+### Deleted
+
+- **html:** removes the media link to "Steam" from the `header`.
+- **html:** removes links to "Steam" and "DTF" from the `main__about` block.
+- **styles:** deletes the outdated *styles-mobile.css* file.
 
 ## Ver. 0.1.0 | 2025-08-19 — 🟠 UNRELEASED
 

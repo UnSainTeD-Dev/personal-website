@@ -1,4 +1,5 @@
-// === Carousel ===
+/** ==================== GALLARY CAROUSEL ==================== **/
+
 const track = document.getElementById('gallery-track');
 const btnPrev = document.querySelector('.gallery__btn--prev');
 const btnNext = document.querySelector('.gallery__btn--next');
@@ -21,19 +22,53 @@ function getImageMetrics() {
     return { images, itemWidth, totalItems: images.length, gap };
 }
 
+function hideBtn(btn) {
+    if (!btn) return;
+    btn.classList.add('hidden');
+    btn.setAttribute('aria-hidden', 'true');
+    btn.setAttribute('aria-disabled', 'true');
+    btn.setAttribute('tabindex', '-1');
+    btn.style.display = '';
+}
+
+function showBtn(btn) {
+    if (!btn) return;
+    btn.classList.remove('hidden');
+    btn.removeAttribute('aria-hidden');
+    btn.removeAttribute('aria-disabled');
+    btn.removeAttribute('tabindex');
+    btn.style.display = '';
+}
+
 function updateGallery() {
     const { images, itemWidth, totalItems, gap } = getImageMetrics();
     if (!totalItems || !itemWidth) {
-        btnPrev.style.display = 'none';
-        btnNext.style.display = 'none';
+        hideBtn(btnPrev);
+        hideBtn(btnNext);
         return;
     }
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
     track.style.width = `${(itemWidth * totalItems) - gap}px`;
 
-    btnPrev.style.display = currentIndex === 0 ? 'none' : 'block';
-    btnNext.style.display =
-        currentIndex >= Math.max(0, totalItems - VISIBLE_COUNT) ? 'none' : 'block';
+    const maxIndex = Math.max(0, totalItems - VISIBLE_COUNT);
+
+    if (totalItems <= VISIBLE_COUNT) {
+        hideBtn(btnPrev);
+        hideBtn(btnNext);
+        return;
+    }
+
+    if (currentIndex === 0) {
+        hideBtn(btnPrev);
+    } else {
+        showBtn(btnPrev);
+    }
+
+    if (currentIndex >= maxIndex) {
+        hideBtn(btnNext);
+    } else {
+        showBtn(btnNext);
+    }
 }
 
 btnPrev.addEventListener('click', () => {
@@ -51,10 +86,53 @@ btnNext.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+        if (currentIndex > 0) { currentIndex--; updateGallery(); }
+    } else if (e.key === 'ArrowRight') {
+        const { totalItems } = getImageMetrics();
+        if (currentIndex < Math.max(0, totalItems - VISIBLE_COUNT)) { currentIndex++; updateGallery(); }
+    }
+});
+
 window.addEventListener('load', updateGallery);
 window.addEventListener('resize', updateGallery);
 
-// === Gallery Pop-up ===
+/** ==================== GALLERY SWIPE ==================== **/
+
+let startX = 0;
+let deltaX = 0;
+
+track.addEventListener("touchstart", (e) => {
+    if (window.innerWidth > 768) return;
+    startX = e.touches[0].clientX;
+    deltaX = 0;
+});
+
+track.addEventListener("touchmove", (e) => {
+    if (window.innerWidth > 768) return;
+    deltaX = e.touches[0].clientX - startX;
+});
+
+track.addEventListener("touchend", () => {
+    if (window.innerWidth > 768) return;
+
+    const { totalItems } = getImageMetrics();
+    const maxIndex = Math.max(0, totalItems - VISIBLE_COUNT);
+
+    if (deltaX < -50 && currentIndex < maxIndex) {
+        currentIndex++;
+        updateGallery();
+    }
+
+    if (deltaX > 50 && currentIndex > 0) {
+        currentIndex--;
+        updateGallery();
+    }
+});
+
+/** ==================== GALLERY POP-UP ==================== **/
+
 const popup = document.getElementById('gallery-popup');
 const popupImage = document.getElementById('popup-image');
 const popupOverlay = document.getElementById('popup-overlay');

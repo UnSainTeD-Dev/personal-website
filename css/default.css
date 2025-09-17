@@ -1,0 +1,77 @@
+/**! ==================== RESET ==================== **/
+
+*{border: 0;margin: 0;padding: 0;}
+html,body{box-sizing: border-box;min-height:100vh;width:100%;line-height:1;font-size:100%;}
+*,*:before,*:after{-moz-box-sizing: inherit;-webkit-box-sizing: inherit;box-sizing: inherit;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+input,button,textarea{font-family:inherit;font-size: inherit;resize: none;}
+input::-ms-clear{display: none;}
+button{background-color: transparent;cursor: pointer;}
+button::-moz-focus-inner{border:0;padding:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6,blockquote{font-weight: inherit;font-size:inherit;text-wrap: balance;}
+a{color:inherit;}
+address{font-style: normal;}
+
+code {background: rgba(255, 255, 255, 0.1);border-radius: 4px;font-family: Consolas, "Liberation Mono", "Courier New", monospace;padding: 0.1rem 0.3rem;}
+
+/**! ==================== PAGE STYLE ==================== **/
+
+:root {
+    --container-max: 1230px;
+    --btn-bg: rgba(66, 66, 66, .75);
+    --btn-bg-hover: rgba(245, 245, 245, .25);
+    --border-rad: 8px;
+    --outline-white: 2px solid rgb(255, 255, 255);
+    --outline-dark: 2px solid rgb(66, 66, 66);
+    --lh-heading: 1.25;
+    --lh-text: 1.5;
+    --ff-header: "Georgia", sans-serif;
+    --ff: "Courier New", sans-serif;
+    --ff-footer: "Georgia", sans-serif;
+    --color-txt-dark: rgb(33, 33, 33);
+    --color-txt-white: rgb(255, 255, 255);
+    --txt-sh-heading: -1px 2px 2px rgba(0, 0, 0, .75);
+    --txt-sh-text: -1px 1px 2px rgba(33, 33, 33, .75);
+    --hr-bg: linear-gradient(to right, transparent, #333, transparent);
+}
+
+body {
+    background: linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/** ==================== HEADER PLACEHOLDER ==================== **/
+
+.header-placeholder {height: 66px;}
+.header--enter {opacity: 0;}
+.header--ready {transition: opacity .3s ease-in;opacity: 1;}
+
+/** ==================== SCROLLBAR ==================== **/
+
+::-webkit-scrollbar {display: none;}
+
+
+
+
