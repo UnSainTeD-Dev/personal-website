@@ -5,7 +5,7 @@ const btnPrev = document.querySelector('.roadmap__btn--prev');
 const btnNext = document.querySelector('.roadmap__btn--next');
 
 const VISIBLE_COUNT = 1;
-let currentIndex = 1;
+let currentIndex = 2;
 
 function getImageMetrics() {
     const images = track.querySelectorAll('li');

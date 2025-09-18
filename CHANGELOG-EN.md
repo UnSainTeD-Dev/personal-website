@@ -1,6 +1,16 @@
 # CHANGELOG | personal-website
 
-## Ver. 0.2.1 | 2025-**-** — 🔵 IN PROGRESS
+## Ver. 0.2.2 | 2025-XX-XX — 🔵 IN PROGRESS
+
+## Ver. 0.2.1 | 2025-09-18 — 🟠 UNRELEASED
+
+***Day 19***
+
+### Added
+
+- **files:** adds *main.js*.
+- **files:** adds an SVG icon of the "Up" button.
+- **feature:** adds a "Go back up" button above the sidebar in *version-page.html* (appears when scrolling down and scrolls smoothly up).
 
 ## Ver. 0.2.0 | 2025-09-17 — 🟠 UNRELEASED
 

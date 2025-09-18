@@ -19,7 +19,7 @@ Includes version tracking, roadmap visualization, and interactive UI components.
 | ------------ | ------------------------------------------------------------------------------------ |
 | **_Start_**  | ![Start](https://img.shields.io/badge/2025--07--27-808080?style=for-the-badge)       |
 | **_End_**    | ![End](https://img.shields.io/badge/****--**--**-808080?style=for-the-badge)         |
-| **_Time_**   | ![Time](https://img.shields.io/badge/~_1800_min._/_30h00-FFFFFF?style=for-the-badge) |
+| **_Time_**   | ![Time](https://img.shields.io/badge/~_1860_min._/_31h00-FFFFFF?style=for-the-badge) |
 | **_Status_** | ![Status](https://img.shields.io/badge/In_Progress-D2691E?style=for-the-badge)       |
 
 ---
@@ -74,6 +74,7 @@ Includes version tracking, roadmap visualization, and interactive UI components.
     <p>🔵 IN PROGRESS — this version is in progress.</p>
   </details>
 
+- [Ver. 0.2.1 | 2025-09-18 D19](CHANGELOG-EN.md#ver-021--2025-09-18---unreleased) — 🟠 UNRELEASED
 - [Ver. 0.2.0 | 2025-09-17 D18](CHANGELOG-EN.md#ver-020--2025-09-17---unreleased) — 🟠 UNRELEASED
 - [Ver. 0.1.0 | 2025-08-19 D12](CHANGELOG-EN.md#ver-010--2025-08-19---unreleased) — 🟠 UNRELEASED
 - [Ver. 0.0.9 | 2025-08-13 D10](CHANGELOG-EN.md#ver-009--2025-08-13---unreleased) — 🟠 UNRELEASED

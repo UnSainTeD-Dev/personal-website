@@ -29,15 +29,35 @@
                 <div class="container">
                     <!-- Sidebar -->
                     <aside class="sidebar">
+                        <button class="sidebar__to-top">
+                            <img src="images/icons/arrow-up.svg" alt="Back to top">
+                        </button>
                         <ul class="sidebar__list">
+                            <li class="sidebar__item"><a href="#v-0-2-1">Ver. 0.2.1 | 2025-09-18</a></li>
                             <li class="sidebar__item"><a href="#v-0-2-0">Ver. 0.2.0 | 2025-09-17</a></li>
-                            <!-- <li class="sidebar__item"><a href="#v-0-1-0">Ver. 0.1.0 | 2025-08-19</a></li> -->
                         </ul>
                     </aside>
                     <!-- Changelog -->
                     <section class="changelog">
                         <h2 class="section-title changelog__title">Version List</h2>
                         <article class="changelog__article">
+                            <section class="changelog__entry" id="v-0-2-1">
+                                <h3 class="section-subtitle changelog__subtitle">Ver. 0.2.1 | 2025-09-18 (Day 19)</h3>
+                                <div class="changelog__group">
+                                    <h4 class="changelog__label">Added</h4>
+                                    <ul class="changelog__article-list">
+                                        <li>
+                                            <strong>files:</strong> adds <em>main.js</em>.
+                                        </li>
+                                        <li>
+                                            <strong>files:</strong> adds an SVG icon of the "Up" button.
+                                        </li>
+                                        <li>
+                                            <strong>feature:</strong> adds a "Go back up" button above the sidebar in <em>version-page.html</em> (appears when scrolling down and scrolls smoothly up).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
                             <section class="changelog__entry" id="v-0-2-0">
                                 <h3 class="section-subtitle changelog__subtitle">Ver. 0.2.0 | 2025-09-17 (Day 18)</h3>
                                 <div class="changelog__group">
@@ -58,7 +78,8 @@
                                             <strong>core:</strong> changes the structure of the main page.
                                         </li>
                                         <li>
-                                            <strong>docs:</strong> updates <em>README.md</em> — bringing documentation to a single standard, adding new data and information.
+                                            <strong>docs:</strong> updates <em>README.md</em> — bringing documentation
+                                            to a single standard, adding new data and information.
                                         </li>
                                         <li>
                                             <strong>html:</strong> updates the <code>head</code> structure and meta
@@ -129,6 +150,7 @@
         </footer>
     </div>
     <script src="js/include-header.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
