@@ -39,10 +39,12 @@ code {background: rgba(255, 255, 255, 0.1);border-radius: 4px;font-family: Conso
     --txt-sh-heading: -1px 2px 2px rgba(0, 0, 0, .75);
     --txt-sh-text: -1px 1px 2px rgba(33, 33, 33, .75);
     --hr-bg: linear-gradient(to right, transparent, #333, transparent);
+    --body-bg-dark:linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%);
+    --body-bg-light: linear-gradient(135deg, #e4e4e4 0%, #d7d7d7 50%, #ffffff 100%);
 }
 
 body {
-    background: linear-gradient(135deg, #111111 0%, #222222 50%, #000000 100%);
+    background: var(--body-bg-dark);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
