@@ -1,0 +1,22 @@
+/**! ==================== IMPORT ==================== **/
+
+@import url("./default.css");
+/* @import url("./global.css"); */
+/* @import url("./breakpoints.css"); */
+
+/**! ==================== MAIN ==================== **/
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/** ==================== MAIN INNER ==================== **/
+
+/* .main__inner {null} */
+/* .container {default} */
+
+/** ==================== BLOCK ==================== **/
+/** ==================== BLOCK ==================== **/
+/** ==================== BLOCK ==================== **/
