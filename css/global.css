@@ -1,0 +1,46 @@
+/**! ==================== GLOBAL ==================== **/
+
+/** ===== LINK & BUTTON ===== **/
+
+.link,
+.btn {
+    letter-spacing: .1em;
+    border-radius: var(--border-radius-main);
+    padding: 8px 12px;
+    color: inherit;
+    transition:
+        background 160ms ease,
+        color 160ms ease,
+        transform 160ms ease;
+    user-select: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    font: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.link:hover,
+.link:focus-visible,
+.link[aria-current="page"],
+.btn:hover,
+.btn:focus-visible {
+    background: rgba(255, 255, 255, .075);
+    color: var(--txt-color);
+}
+
+.link:active,
+.btn:active {
+    transform: scale(.95);
+}
+
+.link:focus-visible,
+.btn:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid currentColor;
+}

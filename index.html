@@ -19,17 +19,51 @@
 
 <body>
     <div class="wrapper">
-
         <header class="header">
             <!-- Header Inner -->
             <div class="header__inner">
 
-                <div class="container">
-                    <!-- BLOCK -->
+                <div class="container header__container">
+                    <!-- Brand -->
+                    <a class="header__brand" href="index.html" aria-label="UnSteD — home">
+                        <img class="header__brand-logo" src="images/logo/logo.svg" alt="" width="32" height="32"
+                            aria-hidden="true">
+                        <span class="header__brand-name">UnSainTeD</span>
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="header__nav" aria-label="Main navigation">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="link header__nav-link" href="#home" aria-current="page">Home</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="link header__nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="link header__nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="link header__nav-link" href="#about">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- External links -->
+                    <div class="header__actions" aria-label="External links and theme">
+                        <a class="link header__external-link" href="https://github.com/UnSainTeD-Dev" target="_blank"
+                            rel="noopener noreferrer" aria-label="Open GitHub profile">
+                            GitHub
+                        </a>
+
+                        <button class="btn header__theme-toggle" type="button" id="theme-toggle"
+                            aria-label="Switch color theme" aria-pressed="false">
+                            Theme
+                        </button>
+                    </div>
                 </div>
 
             </div>
-
         </header>
 
         <main class="main">
