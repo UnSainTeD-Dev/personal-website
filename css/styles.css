@@ -134,9 +134,131 @@
 
 /** ==================== MAIN INNER ==================== **/
 
-/* .main__inner {null} */
-/* .container {default} */
+.main__inner {
+    width: 100%;
+}
 
-/** ==================== BLOCK ==================== **/
-/** ==================== BLOCK ==================== **/
-/** ==================== BLOCK ==================== **/
+/* .container {default} */
+.main__container {
+    grid-template-areas:
+        "welcome stack"
+        "news stack";
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    align-items: start;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, .025);
+    margin: 50px auto 0;
+}
+
+/** ==================== SECTION WELCOME ==================== **/
+
+.welcome {
+    grid-area: welcome;
+    min-height: 180px;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 15px;
+}
+
+/* .section-title {global} */
+.welcome__title {
+    letter-spacing: -0.05em;
+    padding: 0 0 20px;
+    font-size: 2.5rem;
+    color: var(--txt-color);
+}
+
+.welcome__text {
+    font-family: var(--ff);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--txt-color-50);
+    /* TODO Анимация печати текста один раз на загрузку страницы */
+}
+
+/** ==================== SECTION STACK ==================== **/
+
+.stack {
+    grid-area: stack;
+    min-height: 460px;
+    background-color: rgba(255, 255, 255, .095);
+    padding: 10px;
+}
+
+/* .section-title {global} */
+.stack__title {
+    text-align: center;
+    color: var(--txt-color);
+}
+
+/** ==================== SECTION NEWS ==================== **/
+
+.news {
+    grid-area: news;
+    min-height: 250px;
+    max-height: 300px;
+    background-color: rgba(255, 255, 255, .075);
+    padding: 10px;
+}
+
+/* .section-subtitle {global} */
+.news__title {
+    padding: 0 0 10px;
+    text-align: right;
+    color: var(--txt-color);
+}
+
+.news__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    max-height: 250px;
+    background-color: rgba(11, 11, 11, .35);
+    border: 1px solid rgba(255, 255, 255, .08);
+    padding: 10px;
+}
+
+.news__date {
+    display: inline-flex;
+    margin: 0 0 10px;
+    font-family: var(--ff);
+    font-weight: 500;
+    font-size: .75rem;
+    color: var(--accent-color);
+}
+
+.news__card-title {
+    margin: 0 0 10px;
+    font-family: var(--ff);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--txt-color);
+}
+
+.news__text {
+    margin: 0 0 14px;
+    font-family: var(--ff);
+    font-weight: 500;
+    font-style: italic;
+    font-size: .85rem;
+    color: var(--txt-color-50);
+}
+
+.news__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .05);
+    margin: auto 0 0;
+    font-weight: 500;
+    font-size: .85rem;
+    color: var(--txt-color-50);
+}

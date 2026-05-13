@@ -1,10 +1,25 @@
 /**! ==================== GLOBAL ==================== **/
 
+/** ===== SECTION TITLE ===== **/
+
+.section-title {
+    font-family: var(--ff);
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.section-subtitle {
+    font-family: var(--ff);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
 /** ===== LINK & BUTTON ===== **/
 
 .link,
 .btn {
     letter-spacing: .1em;
+    text-decoration: none;
     border-radius: var(--border-radius-main);
     padding: 8px 12px;
     color: inherit;
@@ -13,10 +28,6 @@
         color 160ms ease,
         transform 160ms ease;
     user-select: none;
-}
-
-.link {
-    text-decoration: none;
 }
 
 .btn {
