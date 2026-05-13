@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UnSteD</title>
-    <meta name="description"
-        content="Hi, I’m UnSteD — a beginner developer. This is my personal portfolio blog with projects, notes, and experiments.">
+    <title>unsted.dev</title>
+    <meta name="description" content="Hi, I’m UnSteD — a beginner developer. This is my personal portfolio blog with projects, notes, and experiments.">
     <meta name="theme-color" content="#0b0b0b">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -26,40 +25,24 @@
                 <div class="container header__container">
                     <!-- Brand -->
                     <a class="header__brand" href="index.html" aria-label="UnSteD — home">
-                        <img class="header__brand-logo" src="images/logo/logo.svg" alt="" width="32" height="32"
-                            aria-hidden="true">
-                        <span class="header__brand-name">UnSainTeD</span>
+                        <img class="header__brand-logo" src="images/logo/logo.svg" alt="" width="32" height="32" aria-hidden="true">
+                        <span class="header__brand-name">unsted.dev</span>
                     </a>
 
                     <!-- Navigation -->
                     <nav class="header__nav" aria-label="Main navigation">
                         <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a class="link header__nav-link" href="#home" aria-current="page">Home</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="link header__nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="link header__nav-link" href="#blog">Blog</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="link header__nav-link" href="#about">About</a>
-                            </li>
+                            <li class="header__nav-item"><a class="link header__nav-link" href="#home" aria-current="page">Home</a></li>
+                            <li class="header__nav-item"><a class="link header__nav-link" href="#projects">Projects</a></li>
+                            <li class="header__nav-item"><a class="link header__nav-link" href="#blog">Blog</a></li>
+                            <li class="header__nav-item"><a class="link header__nav-link" href="#about">About</a></li>
                         </ul>
                     </nav>
 
                     <!-- External links -->
                     <div class="header__actions" aria-label="External links and theme">
-                        <a class="link header__external-link" href="https://github.com/UnSainTeD-Dev" target="_blank"
-                            rel="noopener noreferrer" aria-label="Open GitHub profile">
-                            GitHub
-                        </a>
-
-                        <button class="btn header__theme-toggle" type="button" id="theme-toggle"
-                            aria-label="Switch color theme" aria-pressed="false">
-                            Theme
-                        </button>
+                        <a class="link header__external-link" href="https://github.com/UnSainTeD-Dev" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">GitHub</a>
+                        <button class="btn header__theme-toggle" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false">Theme</button>
                     </div>
                 </div>
 
@@ -70,19 +53,59 @@
             <!-- Main Inner -->
             <div class="main__inner">
 
-                <div class="container">
-                    <!-- BLOCK -->
+                <div class="container main__container">
+                    <!-- Welcome -->
+                    <section class="welcome" id="home" aria-labelledby="welcome-title">
+                        <h1 class="section-title welcome__title" id="welcome-title">Hi, I’m UnSainTeD.</h1>
+
+                        <p class="welcome__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consectetur voluptates! Sunt voluptates consectetur expedita, iste earum quod nesciunt cumque aspernatur vel nam qui? Quisquam mollitia rem quos nisi asperiores.
+                        </p>
+                    </section>
+
+                    <!-- Stack -->
+                    <section class="stack" aria-labelledby="stack-title">
+                        <h2 class="section-title stack__title" id="stack-title">Stack</h2>
+                    </section>
+
+                    <!-- Latest Updates -->
+                    <section class="news" aria-labelledby="news-title">
+                        <h2 class="section-subtitle news__title" id="news-title">Latest updates</h2>
+
+                        <div class="news__list">
+                            <article class="news__card">
+                                <time class="news__date" datetime="2026-05-13">May 10, 2026</time>
+                                <h3 class="news__card-title">Lorem ipsum dolor sit.</h3>
+                                <p class="news__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, magni?</p>
+                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit.">Read</a>
+                            </article>
+
+                            <article class="news__card">
+                                <time class="news__date" datetime="2026-05-10">May 12, 2026</time>
+                                <h3 class="news__card-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat.</p>
+                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit amet consectetur">Read</a>
+                            </article>
+
+                            <article class="news__card">
+                                <time class="news__date" datetime="2026-05-12">May 15, 2026</time>
+                                <h3 class="news__card-title">Lorem, ipsum dolor.</h3>
+                                <p class="news__text">Lorem ipsum dolor sit amet consectetur.</p>
+                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem, ipsum dolor.">Read</a>
+                            </article>
+
+                        </div>
+                    </section>
                 </div>
 
             </div>
-
         </main>
 
         <footer class="footer">
             <!-- Footer Inner -->
             <div class="footer__inner">
 
-                <div class="container">
+                <div class="container footer__container">
                     <!-- BLOCK -->
                 </div>
 
