@@ -41,7 +41,7 @@
 .link[aria-current="page"],
 .btn:hover,
 .btn:focus-visible {
-    background: rgba(255, 255, 255, .075);
+    background: rgba(255, 255, 255, 0.075);
     color: var(--txt-color);
 }
 
