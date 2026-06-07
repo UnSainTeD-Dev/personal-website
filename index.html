@@ -7,6 +7,15 @@
     <title>unsted.dev</title>
     <meta name="description" content="Hi, I'm UnSteD — a beginner developer. This is my personal portfolio blog with projects, notes, and experiments.">
     <meta name="theme-color" content="#0b0b0b">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("theme") === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                }
+            } catch (e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
@@ -18,152 +27,119 @@
     <div class="wrapper">
         <!--! ==================== HEADER ==================== -->
         <header class="header" id="header">
-            <div class="header__inner">
-                <div class="container header__container">
-                    <!-- Brand -->
-                    <a class="header__brand" href="index.html" aria-label="UnSteD — home">
-                        <img class="header__brand-logo" src="images/logo/logo.svg" alt="" width="32" height="32" aria-hidden="true">
-                        <span class="header__brand-name">unsted.dev</span>
-                    </a>
-                    <!-- Navigation -->
-                    <nav class="header__nav" aria-label="Main navigation">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a class="link header__nav-link" href="#home" aria-current="page">Home</a></li>
-                            <li class="header__nav-item"><a class="link header__nav-link" href="#projects">Projects</a></li>
-                            <li class="header__nav-item"><a class="link header__nav-link" href="#blog">Blog</a></li>
-                            <li class="header__nav-item"><a class="link header__nav-link" href="#about">About</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Actions -->
-                    <div class="header__actions">
-                        <a class="link header__external-link" href="https://github.com/UnSainTeD-Dev" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile (opens in new tab)">GitHub</a>
-                        <button class="btn header__theme-toggle" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false">Theme</button>
-                    </div>
+            <div class="container header__container">
+                <!-- Brand -->
+                <a class="header__brand" href="index.html" aria-label="UnSteD — home">
+                    <img class="header__brand-logo" src="images/logo/logo.svg" alt="" width="32" height="32" aria-hidden="true">
+                    <span class="header__brand-name">unsted.dev</span>
+                </a>
+                <!-- Navigation -->
+                <nav class="header__nav" aria-label="Main navigation">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="link header__nav-link" href="#home" aria-current="page">Home</a></li>
+                        <li class="header__nav-item"><a class="link header__nav-link" href="#projects">Projects</a></li>
+                        <li class="header__nav-item"><a class="link header__nav-link" href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <!-- Actions -->
+                <div class="header__actions">
+                    <a class="link link--outline u-center header__external-link" href="https://github.com/UnSainTeD-Dev" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile (opens in new tab)">GitHub</a>
+                    <button class="btn btn--outline u-center header__theme-toggle" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false">Theme</button>
                 </div>
             </div>
         </header>
         <!--! ==================== MAIN ==================== -->
         <main class="main">
-            <div class="main__inner">
-                <div class="container main__container">
-                    <!-- Welcome -->
-                    <section class="welcome" id="home" aria-labelledby="welcome-title">
-                        <h1 class="section-title welcome__title" id="welcome-title">Hi, I'm UnSainTeD.</h1>
-                        <p class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consectetur voluptates! Sunt voluptates consectetur expedita, iste earum quod nesciunt cumque aspernatur vel nam qui? Quisquam mollitia rem quos nisi asperiores.</p>
-                    </section>
-                    <!-- Stack -->
-                    <section class="stack" aria-labelledby="stack-title">
-                        <h2 class="section-title stack__title" id="stack-title">Stack</h2>
-                    </section>
-                    <!-- Latest Updates -->
-                    <section class="news" aria-labelledby="news-title">
-                        <h2 class="section-subtitle news__title" id="news-title">Latest updates</h2>
-                        <div class="news__list">
-                            <article class="news__card">
-                                <time class="news__date" datetime="2026-05-10">May 10, 2026</time>
-                                <h3 class="news__card-title">Lorem ipsum dolor sit.</h3>
-                                <p class="news__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, magni?</p>
-                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit.">Read</a>
-                            </article>
-                            <article class="news__card">
-                                <time class="news__date" datetime="2026-05-12">May 12, 2026</time>
-                                <h3 class="news__card-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                                <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat.</p>
-                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit amet consectetur.">Read</a>
-                            </article>
-                            <article class="news__card">
-                                <time class="news__date" datetime="2026-05-15">May 15, 2026</time>
-                                <h3 class="news__card-title">Lorem, ipsum dolor.</h3>
-                                <p class="news__text">Lorem ipsum dolor sit amet consectetur.</p>
-                                <a class="btn news__button" href="#blog" aria-label="Read: Lorem, ipsum dolor.">Read</a>
-                            </article>
-                        </div>
-                    </section>
-                    <!-- Projects -->
-                    <section class="projects" id="projects" aria-labelledby="projects-section-title">
-                        <h2 class="visually-hidden" id="projects-section-title">Projects</h2>
-                        <div class="projects__layout">
-                            <!-- Projects Panel -->
-                            <aside class="projects-panel" aria-labelledby="projects-panel-title">
-                                <h3 class="section-subtitle projects-panel__title" id="projects-panel-title">Projects</h3>
-                                <nav class="projects-panel__nav" aria-label="Projects list">
-                                    <a class="projects-panel__item is-active" href="#project-nextmoviedb" data-project="nextmoviedb">
-                                        <span class="projects-panel__content">
-                                            <span class="projects-panel__name">Lorem, ipsum dolor.</span>
-                                        </span>
-                                    </a>
-                                    <a class="projects-panel__item" href="#project-nextmoviedb" data-project="nextmoviedb">
-                                        <span class="projects-panel__content">
-                                            <span class="projects-panel__name">Lorem.</span>
-                                        </span>
-                                    </a>
-                                    <a class="projects-panel__item" href="#project-nextmoviedb" data-project="nextmoviedb">
-                                        <span class="projects-panel__content">
-                                            <span class="projects-panel__name">Lorem, ipsum.</span>
-                                        </span>
-                                    </a>
-                                    <a class="projects-panel__item" href="#project-nextmoviedb" data-project="nextmoviedb">
-                                        <span class="projects-panel__content">
-                                            <span class="projects-panel__name">Lorem ipsum dolor sit.</span>
-                                        </span>
-                                    </a>
-                                    <a class="projects-panel__item" href="#project-nextmoviedb" data-project="nextmoviedb">
-                                        <span class="projects-panel__content">
-                                            <span class="projects-panel__name">Lorem, ipsum dolor.</span>
-                                        </span>
-                                    </a>
-                                </nav>
-                            </aside>
-                            <!-- Projects Gallery -->
-                            <div class="projects-gallery" id="project-nextmoviedb">
-                                <div class="projects-gallery__viewport" aria-live="polite" aria-atomic="false">
-                                    <figure class="projects-gallery__slide is-active" data-slide="1">
-                                        <img class="projects-gallery__image" src="images/content/projects/project-name/poster-main.png" alt="NextMovieDB — main screen" width="1120" height="630" loading="lazy">
-                                    </figure>
-                                    <figure class="projects-gallery__slide" data-slide="2" hidden>
-                                        <img class="projects-gallery__image" src="images/content/projects/project-name/poster-popup.png" alt="NextMovieDB — popup screen" width="1120" height="630" loading="lazy">
-                                    </figure>
-                                    <figure class="projects-gallery__slide" data-slide="3" hidden>
-                                        <img class="projects-gallery__image" src="images/content/projects/project-name/poster-failed-search.png" alt="NextMovieDB — failed search screen" width="1120" height="630" loading="lazy">
-                                    </figure>
-                                    <button class="projects-gallery__arrow projects-gallery__arrow--prev"
-                                        type="button"
-                                        aria-label="Previous image"
-                                        data-gallery-prev
-                                        disabled>&lsaquo;</button>
-                                    <button class="projects-gallery__arrow projects-gallery__arrow--next"
-                                        type="button"
-                                        aria-label="Next image"
-                                        data-gallery-next>&rsaquo;</button>
-                                    <article class="projects-gallery__card">
-                                        <div class="projects-gallery__project-content">
-                                            <p class="projects-gallery__project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex suscipit fugiat dolorum maxime dignissimos aspernatur?</p>
-                                        </div>
-                                        <div class="projects-gallery__actions">
-                                            <a class="btn projects-gallery__button" href="#" aria-label="Open NextMovieDB project">Open project</a>
-                                            <a class="btn projects-gallery__button" href="#" aria-label="View NextMovieDB source code on GitHub">Source code</a>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="projects-gallery__footer">
-                                    <div class="projects-gallery__dots" role="group" aria-label="Image navigation">
-                                        <button class="projects-gallery__dot is-active" type="button" aria-label="Image 1" aria-current="true" data-gallery-dot="1"></button>
-                                        <button class="projects-gallery__dot" type="button" aria-label="Image 2" data-gallery-dot="2"></button>
-                                        <button class="projects-gallery__dot" type="button" aria-label="Image 3" data-gallery-dot="3"></button>
+            <div class="container main__container">
+                <!-- Welcome -->
+                <section class="welcome" id="home" aria-labelledby="welcome-title">
+                    <h1 class="section-title welcome__title" id="welcome-title">Hi, I'm <span>UnSainTeD</span>.</h1>
+                    <p class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consectetur voluptates! Sunt voluptates consectetur expedita, iste earum quod nesciunt cumque aspernatur vel nam qui? Quisquam mollitia rem quos nisi asperiores.</p>
+                </section>
+                <!-- Stack -->
+                <section class="stack"></section>
+                <!-- Latest Updates -->
+                <section class="news" aria-labelledby="news-title">
+                    <h2 class="section-subtitle news__title" id="news-title">Latest updates</h2>
+                    <div class="news__list">
+                        <article class="news__card">
+                            <time class="news__date" datetime="2026-05-10">May 10, 2026</time>
+                            <h3 class="news__card-title">Lorem ipsum dolor sit.</h3>
+                            <p class="news__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, magni?</p>
+                            <a class="btn btn--outline u-center news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit.">Read</a>
+                        </article>
+                        <article class="news__card">
+                            <time class="news__date" datetime="2026-05-12">May 12, 2026</time>
+                            <h3 class="news__card-title">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <p class="news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat.</p>
+                            <a class="btn btn--outline u-center news__button" href="#blog" aria-label="Read: Lorem ipsum dolor sit amet consectetur.">Read</a>
+                        </article>
+                        <article class="news__card">
+                            <time class="news__date" datetime="2026-05-15">May 15, 2026</time>
+                            <h3 class="news__card-title">Lorem, ipsum dolor.</h3>
+                            <p class="news__text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a class="btn btn--outline u-center news__button" href="#blog" aria-label="Read: Lorem, ipsum dolor.">Read</a>
+                        </article>
+                    </div>
+                </section>
+                <!-- Projects -->
+                <section class="projects" id="projects" aria-labelledby="projects-section-title">
+                    <h2 class="section-title projects__title" id="projects-title">Projects</h2>
+                    <div class="projects__layout">
+                        <!-- Projects Panel -->
+                        <aside class="projects-panel" aria-labelledby="projects-panel-title">
+                            <nav class="projects-panel__nav" aria-label="Projects list">
+                                <a class="projects-panel__item is-active" href="#project-nextmoviedb" data-project="nextmoviedb">
+                                    <span class="projects-panel__name">NextMovieDB</span>
+                                </a>
+                                <a class="projects-panel__item" href="#project-finora" data-project="finora">
+                                    <span class="projects-panel__name">Finora</span>
+                                </a>
+                                <a class="projects-panel__item" href="#project-moviescrapercli" data-project="moviescrapercli">
+                                    <span class="projects-panel__name">MovieScraperCLI</span>
+                                </a>
+                            </nav>
+                        </aside>
+                        <!-- Projects Gallery -->
+                        <div class="projects-gallery" id="project-nextmoviedb">
+                            <div class="projects-gallery__viewport" aria-live="polite" aria-atomic="false">
+                                <figure class="projects-gallery__slide is-active" data-slide="1">
+                                    <img class="projects-gallery__image" src="images/content/projects/project-name/poster-main.png" alt="NextMovieDB — main screen" loading="lazy">
+                                </figure>
+                                <figure class="projects-gallery__slide" data-slide="2" hidden>
+                                    <img class="projects-gallery__image" src="images/content/projects/project-name/poster-popup.png" alt="NextMovieDB — popup screen" loading="lazy">
+                                </figure>
+                                <figure class="projects-gallery__slide" data-slide="3" hidden>
+                                    <img class="projects-gallery__image" src="images/content/projects/project-name/poster-failed-search.png" alt="NextMovieDB — failed search screen" loading="lazy">
+                                </figure>
+                                <button class="u-center projects-gallery__arrow projects-gallery__arrow--prev" type="button" aria-label="Previous image" data-gallery-prev disabled></button>
+                                <button class="u-center projects-gallery__arrow projects-gallery__arrow--next" type="button" aria-label="Next image" data-gallery-next></button>
+                                <article class="projects-gallery__card">
+                                    <div class="projects-gallery__project-content">
+                                        <p class="projects-gallery__project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex suscipit fugiat dolorum maxime dignissimos aspernatur?</p>
                                     </div>
+                                    <div class="projects-gallery__actions">
+                                        <a class="btn u-center projects-gallery__button" href="#" aria-label="Open NextMovieDB project">Open project</a>
+                                        <a class="btn u-center projects-gallery__button" href="#" aria-label="View NextMovieDB source code on GitHub">Source code</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="projects-gallery__footer">
+                                <div class="projects-gallery__dots" role="group" aria-label="Image navigation">
+                                    <button class="projects-gallery__dot is-active" type="button" aria-label="Image 1" aria-current="true" data-gallery-dot="1"></button>
+                                    <button class="projects-gallery__dot" type="button" aria-label="Image 2" data-gallery-dot="2"></button>
+                                    <button class="projects-gallery__dot" type="button" aria-label="Image 3" data-gallery-dot="3"></button>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </main>
         <!--! ==================== FOOTER ==================== -->
         <footer class="footer" id="footer">
-            <div class="footer__inner">
-                <div class="container footer__container">
-                    <!-- TODO: footer content -->
-                </div>
+            <div class="container footer__container">
+                <!-- TODO: footer content -->
             </div>
         </footer>
     </div>
