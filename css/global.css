@@ -18,6 +18,7 @@
 }
 
 .section-subtitle {
+    letter-spacing: var(--ls-base);
     font-weight: var(--fw-medium);
     font-size: var(--fs-md);
     line-height: var(--lh-tight);
@@ -27,19 +28,13 @@
 
 .link,
 .btn {
-    text-decoration: none;
     border-radius: var(--radius-pill);
-    padding: 8px 12px;
+    padding: 5px 10px;
     transition:
-        background var(--dur-fast) var(--ease),
-        color var(--dur-fast) var(--ease),
-        transform var(--dur-fast) var(--ease);
+        background var(--dur-fast) ease,
+        color var(--dur-fast) ease,
+        transform var(--dur-fast) ease;
     user-select: none;
-}
-
-.btn {
-    background: transparent;
-    cursor: pointer;
 }
 
 .link--outline,

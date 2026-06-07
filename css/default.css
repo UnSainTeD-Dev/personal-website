@@ -3,7 +3,8 @@
 *{overflow-wrap:break-word;border:0;margin:0;padding:0;}
 html,body{box-sizing: border-box;min-height:100vh;width:100%;font-size:100%;line-height:1;}
 *,*::before,*::after{box-sizing:inherit;}
-a,button{font:inherit;text-decoration:none;color:inherit;}
+a,button{font:inherit;text-decoration:none;background:transparent;color:inherit;cursor:pointer;}
+ul,ol,li{list-style: none;}
 
 /**! ==================== PAGE STYLE ==================== **/
 
@@ -14,8 +15,8 @@ a,button{font:inherit;text-decoration:none;color:inherit;}
     --ff: "Arial", sans-serif;
 
     /* —— Типографика: размеры —— */
-    --fs-2xs:  0.75rem;
-    --fs-xs:   0.875rem;
+    --fs-2xs:  .75rem;
+    --fs-xs:   .875rem;
     --fs-sm:   1rem;
     --fs-md:   1.25rem;
     --fs-lg:   1.75rem;
@@ -31,38 +32,38 @@ a,button{font:inherit;text-decoration:none;color:inherit;}
     --lh-base:  1.55;
 
     /* —— Типографика: трекинг —— */
-    --ls-heading: -0.01em;
+    --ls-heading: .075em;
+    --ls-base: .05em;
 
     /* —— Радиусы —— */
-    --radius-sm:   4px;
-    --radius-md:   10px;
+    --radius-xs:   6px;
+    --radius-sm:   12px;
     --radius-pill: 999px;
 
-    /* —— Тайминги / Easing —— */
-    --ease:     ease;
+    /* —— Тайминги —— */
     --dur-fast: 160ms;
     --dur-base: 180ms;
     --dur-slow: 200ms;
 
     /* —— Фон / Backgrounds —— */
-    --bg-base:         #050505;
-    --bg-surface:      #0D0D0D;
-    --bg-elevated:     #141414;
-    --bg-card-hover:   #1A1A1A;
-    --bg-card-active:  #1F1F1F;
-    --bg-glass:        rgba(11, 11, 11, .82);
+    --bg-base:         rgb(11, 11, 11);
+    --bg-surface:      rgb(15, 15, 15);
+    --bg-elevated:     rgb(22, 22, 22);
+    --bg-card-hover:   rgb(33, 33, 33);
+    --bg-card-active:  rgb(44, 44, 44);
+    --bg-glass:        rgba(11, 11, 11, .75);
     --bg-tint:         rgba(255, 255, 255, .06);
 
     /* —— Акцент / Brand —— */
-    --accent-primary:  #FF4040;
-    --accent-hover:    #FF5A5A;
-    --accent-soft:     #3A1414;
-    --accent-ghost:    #1E0A0A;
+    --accent-primary:  rgb(255, 64, 64);
+    --accent-hover:    rgb(255, 90, 90);
+    --accent-soft:     rgb(58, 20, 20);
+    --accent-ghost:    rgb(30, 10, 10);
 
     /* —— Текст / Text —— */
-    --txt-primary:     #FFFFFF;
-    --txt-secondary:   #B5B5B5;
-    --txt-muted:       #757575;
+    --txt-primary:     rgb(255, 255, 255);
+    --txt-secondary:   rgb(181, 181, 181);
+    --txt-muted:       rgb(117, 117, 117);
 
     /* —— Границы / Borders —— */
     --border-default:  rgba(255, 255, 255, .1);
@@ -70,30 +71,30 @@ a,button{font:inherit;text-decoration:none;color:inherit;}
     --border-header:   rgb(66, 66, 66);
 
     /* —— Dots —— */
-    --dot-idle:        rgba(255, 255, 255, .24);
-    --dot-active:      #FFFFFF;
+    --dot-idle:        rgba(255, 255, 255, .25);
+    --dot-active:      rgb(255, 255, 255);
 }
 
 :root[data-theme="light"] {
     /* —— Фон —— */
-    --bg-base:         #F8F4EE;
-    --bg-surface:      #F3EEE7;
-    --bg-elevated:     #ECE6DD;
-    --bg-card-hover:   #E8E1D7;
-    --bg-card-active:  #E2DAD0;
+    --bg-base:         rgb(248, 244, 238);
+    --bg-surface:      rgb(243, 238, 231);
+    --bg-elevated:     rgb(236, 230, 221);
+    --bg-card-hover:   rgb(232, 225, 215);
+    --bg-card-active:  rgb(226, 218, 208);
     --bg-glass:        rgba(248, 244, 238, .88);
     --bg-tint:         rgba(0, 0, 0, .04);
 
     /* —— Акцент —— */
-    --accent-primary:  #F08A24;
-    --accent-hover:    #FF9D3D;
-    --accent-soft:     #FFF0DE;
-    --accent-ghost:    #FFF8F0;
+    --accent-primary:  rgb(240, 138, 36);
+    --accent-hover:    rgb(255, 157, 61);
+    --accent-soft:     rgb(240, 220, 200);
+    --accent-ghost:    rgb(255, 248, 240);
 
     /* —— Текст —— */
-    --txt-primary:     #2E2E2E;
-    --txt-secondary:   #666666;
-    --txt-muted:       #8C8C8C;
+    --txt-primary:     rgb(46, 46, 46);
+    --txt-secondary:   rgb(102, 102, 102);
+    --txt-muted:       rgb(140, 140, 140);
 
     /* —— Границы —— */
     --border-default:  rgba(0, 0, 0, .1);
@@ -102,7 +103,7 @@ a,button{font:inherit;text-decoration:none;color:inherit;}
 
     /* —— Dots —— */
     --dot-idle:        rgba(0, 0, 0, .2);
-    --dot-active:      #2E2E2E;
+    --dot-active:      rgb(46, 46, 46);
 }
 
 body {
