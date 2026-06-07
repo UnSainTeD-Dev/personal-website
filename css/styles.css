@@ -42,22 +42,22 @@
 }
 
 .header__brand:focus-visible {
-    outline-offset: 2px;
     border-radius: var(--radius-pill);
     outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 
 .header__brand-logo {
-    flex: 0 0 auto;
     display: block;
+    flex: 0 0 auto;
     height: 32px;
     width: 32px;
 }
 
 .header__brand-name {
-    letter-spacing: var(--ls-heading);
     font-weight: var(--fw-bold);
     font-size: var(--fs-sm);
+    letter-spacing: var(--ls-heading);
     color: var(--txt-primary);
 }
 
@@ -75,11 +75,11 @@
 }
 
 .header__nav-link {
-    letter-spacing: var(--ls-base);
     display: inline-flex;
     align-items: center;
     font-weight: var(--fw-medium);
     font-size: var(--fs-xs);
+    letter-spacing: var(--ls-base);
     color: var(--txt-muted);
 }
 
@@ -94,9 +94,9 @@
 
 .header__external-link,
 .header__theme-toggle {
-    letter-spacing: var(--ls-base);
     font-weight: var(--fw-medium);
     font-size: var(--fs-xs);
+    letter-spacing: var(--ls-base);
     color: var(--txt-muted);
 }
 
@@ -107,12 +107,12 @@
 }
 
 .main__container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
     grid-template-areas:
         "welcome stack"
         "news    stack"
         "projects projects";
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 360px;
     align-items: start;
     gap: 30px;
     margin: 50px auto;
@@ -271,8 +271,8 @@
 /** ===== PROJECTS GALLERY ===== */
 
 .projects-gallery__viewport {
-    aspect-ratio: 16 / 9;
     position: relative;
+    aspect-ratio: 16 / 9;
     border-radius: var(--radius-xs);
     overflow: hidden;
 }
@@ -288,11 +288,11 @@
 }
 
 .projects-gallery__image {
-    object-position: center top;
     display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center top;
 }
 
 /** ===== ARROWS ===== */
@@ -313,16 +313,16 @@
 }
 
 .projects-gallery__arrow::before {
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
     display: block;
     height: 16px;
     width: 16px;
     background-color: var(--txt-primary);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     transition: background-color var(--dur-fast) ease;
     content: "";
 }
@@ -347,8 +347,8 @@
 
 .projects-gallery__arrow:hover,
 .projects-gallery__arrow:focus-visible {
-    border-color: var(--border-hover);
     background-color: var(--bg-card-hover);
+    border-color: var(--border-hover);
     outline: none;
 }
 

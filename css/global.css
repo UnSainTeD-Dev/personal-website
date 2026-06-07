@@ -11,17 +11,17 @@
 /** ===== SECTION TITLE ===== **/
 
 .section-title {
-    letter-spacing: var(--ls-heading);
     font-weight: var(--fw-bold);
     font-size: var(--fs-lg);
     line-height: var(--lh-tight);
+    letter-spacing: var(--ls-heading);
 }
 
 .section-subtitle {
-    letter-spacing: var(--ls-base);
     font-weight: var(--fw-medium);
     font-size: var(--fs-md);
     line-height: var(--lh-tight);
+    letter-spacing: var(--ls-base);
 }
 
 /** ===== LINK & BUTTON ===== **/
@@ -60,6 +60,6 @@
 
 .link:focus-visible,
 .btn:focus-visible {
-    outline-offset: 2px;
     outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
