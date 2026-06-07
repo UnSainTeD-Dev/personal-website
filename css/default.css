@@ -3,38 +3,115 @@
 *{overflow-wrap:break-word;border:0;margin:0;padding:0;}
 html,body{box-sizing: border-box;min-height:100vh;width:100%;font-size:100%;line-height:1;}
 *,*::before,*::after{box-sizing:inherit;}
+a,button{font:inherit;text-decoration:none;color:inherit;}
 
 /**! ==================== PAGE STYLE ==================== **/
 
 :root {
     --container-max: 1030px;
 
-    --page-bg: rgb(11, 11, 11);
-    --ff: "Courier New", sans-serif;
+    /* —— Семейство шрифта —— */
+    --ff: "Arial", sans-serif;
 
-    --txt-color: rgb(255, 255, 255);
-    --txt-color-50: rgba(255, 255, 255, .5);
+    /* —— Типографика: размеры —— */
+    --fs-2xs:  0.75rem;
+    --fs-xs:   0.875rem;
+    --fs-sm:   1rem;
+    --fs-md:   1.25rem;
+    --fs-lg:   1.75rem;
+    --fs-xl:   clamp(2rem, 1.4rem + 2.6vw, 2.5rem);
 
-    --border-radius-main: 999px;
+    /* —— Типографика: насыщенность —— */
+    --fw-medium: 500;
+    --fw-bold:   700;
+
+    /* —— Типографика: межстрочный интервал —— */
+    --lh-tight: 1.25;
+    --lh-snug:  1.4;
+    --lh-base:  1.55;
+
+    /* —— Типографика: трекинг —— */
+    --ls-heading: -0.01em;
+
+    /* —— Радиусы —— */
+    --radius-sm:   4px;
+    --radius-md:   10px;
+    --radius-pill: 999px;
+
+    /* —— Тайминги / Easing —— */
+    --ease:     ease;
+    --dur-fast: 160ms;
+    --dur-base: 180ms;
+    --dur-slow: 200ms;
+
+    /* —— Фон / Backgrounds —— */
+    --bg-base:         #050505;
+    --bg-surface:      #0D0D0D;
+    --bg-elevated:     #141414;
+    --bg-card-hover:   #1A1A1A;
+    --bg-card-active:  #1F1F1F;
+    --bg-glass:        rgba(11, 11, 11, .82);
+    --bg-tint:         rgba(255, 255, 255, .06);
+
+    /* —— Акцент / Brand —— */
+    --accent-primary:  #FF4040;
+    --accent-hover:    #FF5A5A;
+    --accent-soft:     #3A1414;
+    --accent-ghost:    #1E0A0A;
+
+    /* —— Текст / Text —— */
+    --txt-primary:     #FFFFFF;
+    --txt-secondary:   #B5B5B5;
+    --txt-muted:       #757575;
+
+    /* —— Границы / Borders —— */
+    --border-default:  rgba(255, 255, 255, .1);
+    --border-hover:    rgba(255, 255, 255, .2);
+    --border-header:   rgb(66, 66, 66);
+
+    /* —— Dots —— */
+    --dot-idle:        rgba(255, 255, 255, .24);
+    --dot-active:      #FFFFFF;
 }
 
 :root[data-theme="light"] {
-    --page-bg: #f5f5f5;
-    /* ! Использовать для светлой темы: */
-    /* background-color: rgb(240, 225, 195); */
-    /* --txt-color: rgb(55, 55, 55); */
+    /* —— Фон —— */
+    --bg-base:         #F8F4EE;
+    --bg-surface:      #F3EEE7;
+    --bg-elevated:     #ECE6DD;
+    --bg-card-hover:   #E8E1D7;
+    --bg-card-active:  #E2DAD0;
+    --bg-glass:        rgba(248, 244, 238, .88);
+    --bg-tint:         rgba(0, 0, 0, .04);
 
-    --txt-color: rgb(0, 0, 0);
-    --txt-color-50: rgba(0, 0, 0, .5);
+    /* —— Акцент —— */
+    --accent-primary:  #F08A24;
+    --accent-hover:    #FF9D3D;
+    --accent-soft:     #FFF0DE;
+    --accent-ghost:    #FFF8F0;
+
+    /* —— Текст —— */
+    --txt-primary:     #2E2E2E;
+    --txt-secondary:   #666666;
+    --txt-muted:       #8C8C8C;
+
+    /* —— Границы —— */
+    --border-default:  rgba(0, 0, 0, .1);
+    --border-hover:    rgba(0, 0, 0, .2);
+    --border-header:   rgb(200, 190, 178);
+
+    /* —— Dots —— */
+    --dot-idle:        rgba(0, 0, 0, .2);
+    --dot-active:      #2E2E2E;
 }
 
 body {
-    background: var(--page-bg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: var(--bg-base);
     font-family: var(--ff);
-    color: var(--txt-color);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-base);
+    color: var(--txt-muted);
 }
 
 .wrapper {
