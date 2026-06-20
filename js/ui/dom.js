@@ -10,6 +10,10 @@ const getAllByQuery = (selector) => [...document.querySelectorAll(selector)];
 
 export const themeToggle = getById("theme-toggle"); // Theme toggle button.
 
+/* ==================== WELCOME ==================== */
+
+export const welcomeText = getByQuery(".welcome__text"); // Welcome paragraph (typing target).
+
 /* ==================== PROJECTS GALLERY ==================== */
 
 export function getAllGalleries() {

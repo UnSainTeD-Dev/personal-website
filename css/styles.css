@@ -139,7 +139,18 @@
     font-weight: var(--fw-medium);
     font-style: italic;
     color: var(--txt-secondary);
-    /* TODO Анимация печати текста один раз на загрузку страницы */
+}
+
+.welcome__text-typed::after {
+    margin-left: 1px;
+    font-style: normal;
+    color: var(--accent-primary);
+    opacity: 0;
+    content: "|";
+}
+
+.welcome__text.is-typing .welcome__text-typed::after {
+    animation: caret-blink 1s steps(1, end) infinite;
 }
 
 /** ==================== SECTION STACK ==================== **/
@@ -454,4 +465,17 @@
     width: 30px;
     background-color: var(--dot-active);
     border-radius: var(--radius-pill);
+}
+
+/**! ==================== ANIMATIONS ==================== **/
+
+@keyframes caret-blink {
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
