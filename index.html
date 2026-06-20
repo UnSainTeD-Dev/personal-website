@@ -13,7 +13,7 @@
                 if (localStorage.getItem("theme") === "light") {
                     document.documentElement.setAttribute("data-theme", "light");
                 }
-            } catch (e) {}
+            } catch (e) { }
         })();
     </script>
     <link rel="stylesheet" href="css/styles.css">
@@ -138,7 +138,10 @@
         <!--! ==================== FOOTER ==================== -->
         <footer class="footer" id="footer">
             <div class="container footer__container">
-                <!-- TODO: footer content -->
+                <p class="footer__copyright">
+                    © 2026 <a class="footer__brand" href="index.html">unsted.dev</a> — made with care &amp; curiosity.
+                </p>
+                <a class="link link--outline u-center footer__link" href="https://github.com/UnSainTeD-Dev" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile (opens in new tab)">GitHub</a>
             </div>
         </footer>
     </div>
