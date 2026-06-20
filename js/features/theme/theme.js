@@ -39,8 +39,6 @@ function toggleTheme() {
 /* ==================== INIT ==================== */
 
 export function initTheme() {
-    // data-theme уже выставлен инлайн-скриптом в <head> (анти-FOUC);
-    // здесь синхронизируем aria-pressed кнопки и вешаем обработчик.
     applyTheme(getStoredTheme());
     themeToggle?.addEventListener("click", toggleTheme);
 }

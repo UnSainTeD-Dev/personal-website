@@ -33,7 +33,7 @@ ul,ol,li{list-style: none;}
 
     /* —— Типографика: трекинг —— */
     --ls-heading: .075em;
-    --ls-base: .05em;
+    --ls-base:    .05em;
 
     /* —— Радиусы —— */
     --radius-xs:   6px;
@@ -107,24 +107,24 @@ ul,ol,li{list-style: none;}
 }
 
 body {
-    background: var(--bg-base);
+    background:  var(--bg-base);
     font-family: var(--ff);
     font-weight: var(--fw-medium);
-    font-size: var(--fs-sm);
+    font-size:   var(--fs-sm);
     line-height: var(--lh-base);
-    color: var(--txt-muted);
+    color:       var(--txt-muted);
 }
 
 .wrapper {
-    display: flex;
+    display:        flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    min-height:     100vh;
+    width:          100%;
+    overflow:       hidden;
 }
 
 .container {
     max-width: var(--container-max);
-    margin: 0 auto;
-    padding: 0 15px;
+    margin:    0 auto;
+    padding:   0 15px;
 }
