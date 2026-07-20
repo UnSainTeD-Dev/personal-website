@@ -52,6 +52,11 @@
     flex: 0 0 auto;
     height: 32px;
     width: 32px;
+    background: url("../images/logo/logo.svg") center / contain no-repeat;
+}
+
+:root[data-theme="light"] .header__brand-logo {
+    background-image: url("../images/logo/logo-light.svg");
 }
 
 .header__brand-name {
