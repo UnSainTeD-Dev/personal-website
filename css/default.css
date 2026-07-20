@@ -77,13 +77,13 @@ ul,ol,li{list-style: none;}
 
 :root[data-theme="light"] {
     /* —— Фон —— */
-    --bg-base:         rgb(248, 244, 238);
-    --bg-surface:      rgb(243, 238, 231);
-    --bg-elevated:     rgb(236, 230, 221);
-    --bg-card-hover:   rgb(232, 225, 215);
-    --bg-card-active:  rgb(226, 218, 208);
-    --bg-glass:        rgba(248, 244, 238, .88);
-    --bg-tint:         rgba(0, 0, 0, .04);
+    --bg-base:         rgb(245, 238, 226);
+    --bg-surface:      rgb(243, 234, 216);
+    --bg-elevated:     rgb(234, 225, 209);
+    --bg-card-hover:   rgb(228, 217, 199);
+    --bg-card-active:  rgb(221, 209, 189);
+    --bg-glass:        rgba(245, 238, 226, .88);
+    --bg-tint:         rgba(90, 62, 30, .05);
 
     /* —— Акцент —— */
     --accent-primary:  rgb(240, 138, 36);
@@ -92,18 +92,18 @@ ul,ol,li{list-style: none;}
     --accent-ghost:    rgb(255, 248, 240);
 
     /* —— Текст —— */
-    --txt-primary:     rgb(46, 46, 46);
-    --txt-secondary:   rgb(102, 102, 102);
-    --txt-muted:       rgb(140, 140, 140);
+    --txt-primary:     rgb(48, 42, 34);
+    --txt-secondary:   rgb(107, 96, 82);
+    --txt-muted:       rgb(146, 133, 116);
 
     /* —— Границы —— */
-    --border-default:  rgba(0, 0, 0, .1);
-    --border-hover:    rgba(0, 0, 0, .2);
-    --border-header:   rgb(200, 190, 178);
+    --border-default:  rgb(224, 211, 187);
+    --border-hover:    rgb(206, 187, 153);
+    --border-header:   rgb(203, 186, 157);
 
     /* —— Dots —— */
-    --dot-idle:        rgba(0, 0, 0, .2);
-    --dot-active:      rgb(46, 46, 46);
+    --dot-idle:        rgba(90, 62, 30, .25);
+    --dot-active:      rgb(48, 42, 34);
 }
 
 body {
