@@ -134,6 +134,81 @@
                         </div>
                     </div>
                 </section>
+                <!-- Blog -->
+                <section class="blog" id="blog" aria-labelledby="blog-title">
+                    <h2 class="section-title section-title--major blog__title" id="blog-title">Blog</h2>
+                    <p class="section-lead">Notes about development, movies, and everything in between.</p>
+                    <div class="blog__tags" role="group" aria-label="Filter posts by tag">
+                        <button class="blog__tag is-active" type="button" aria-pressed="true" data-blog-tag="all">all</button>
+                        <button class="blog__tag" type="button" aria-pressed="false" data-blog-tag="next.js">next.js</button>
+                        <button class="blog__tag" type="button" aria-pressed="false" data-blog-tag="python">python</button>
+                        <button class="blog__tag" type="button" aria-pressed="false" data-blog-tag="devlog">devlog</button>
+                        <button class="blog__tag" type="button" aria-pressed="false" data-blog-tag="notes">notes</button>
+                    </div>
+                    <div class="blog__layout">
+                        <!-- Featured post -->
+                        <article class="blog-featured">
+                            <a class="blog-featured__link" href="#" aria-label="Read: Lorem ipsum dolor sit amet consectetur adipisicing">
+                                <div class="blog-featured__cover" aria-hidden="true">cover — featured post</div>
+                                <div class="blog-featured__body">
+                                    <div class="blog-featured__meta">
+                                        <span class="blog-featured__label">featured</span>
+                                        <span class="blog__tag-badge">next.js</span>
+                                        <time class="blog-featured__date" datetime="2026-05-15">May 15, 2026 · 7 min</time>
+                                    </div>
+                                    <h3 class="blog-featured__post-title">Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+                                    <p class="blog-featured__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptatum, molestias nesciunt eaque.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <!-- Timeline -->
+                        <div class="blog-timeline">
+                            <ol class="blog-timeline__list">
+                                <li class="blog-timeline__item">
+                                    <article class="blog-timeline__post">
+                                        <div class="blog-timeline__meta">
+                                            <time class="blog-timeline__date" datetime="2026-05-12">May 12, 2026</time>
+                                            <span class="blog__tag-badge">next.js</span>
+                                        </div>
+                                        <h3 class="blog-timeline__post-title"><a class="blog-timeline__link" href="#">Sed do eiusmod tempor incididunt</a></h3>
+                                        <p class="blog-timeline__excerpt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    </article>
+                                </li>
+                                <li class="blog-timeline__item">
+                                    <article class="blog-timeline__post">
+                                        <div class="blog-timeline__meta">
+                                            <time class="blog-timeline__date" datetime="2026-05-02">May 2, 2026</time>
+                                            <span class="blog__tag-badge">python</span>
+                                        </div>
+                                        <h3 class="blog-timeline__post-title"><a class="blog-timeline__link" href="#">Duis aute irure dolor in reprehenderit</a></h3>
+                                        <p class="blog-timeline__excerpt">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                                    </article>
+                                </li>
+                                <li class="blog-timeline__item">
+                                    <article class="blog-timeline__post">
+                                        <div class="blog-timeline__meta">
+                                            <time class="blog-timeline__date" datetime="2026-04-18">Apr 18, 2026</time>
+                                            <span class="blog__tag-badge">notes</span>
+                                        </div>
+                                        <h3 class="blog-timeline__post-title"><a class="blog-timeline__link" href="#">Sed ut perspiciatis unde omnis iste</a></h3>
+                                        <p class="blog-timeline__excerpt">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
+                                    </article>
+                                </li>
+                                <li class="blog-timeline__item">
+                                    <article class="blog-timeline__post">
+                                        <div class="blog-timeline__meta">
+                                            <time class="blog-timeline__date" datetime="2026-04-05">Apr 5, 2026</time>
+                                            <span class="blog__tag-badge">devlog</span>
+                                        </div>
+                                        <h3 class="blog-timeline__post-title"><a class="blog-timeline__link" href="#">At vero eos et accusamus iusto odio</a></h3>
+                                        <p class="blog-timeline__excerpt">Et harum quidem rerum facilis est et expedita distinctio nam.</p>
+                                    </article>
+                                </li>
+                            </ol>
+                            <a class="link link--outline u-center blog-timeline__more" href="#" aria-label="See all blog posts">All posts →</a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         <!--! ==================== FOOTER ==================== -->
